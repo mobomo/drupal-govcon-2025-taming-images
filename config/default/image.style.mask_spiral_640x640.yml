@@ -1,0 +1,35 @@
+uuid: a544b094-2fda-4b78-bbb7-d33faa2e5ceb
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_effects
+name: mask_spiral_640x640
+label: 'Mask - Spiral (640x640)'
+effects:
+  cbc5270f-4fc7-4300-b896-d119d482aa98:
+    uuid: cbc5270f-4fc7-4300-b896-d119d482aa98
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 640
+      crop_type: focal_point
+  c45d112d-17e5-4449-a1d2-8d56dbc1ea4f:
+    uuid: c45d112d-17e5-4449-a1d2-8d56dbc1ea4f
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+  927cd43a-23fb-4fd0-a10c-228d9f81f192:
+    uuid: 927cd43a-23fb-4fd0-a10c-228d9f81f192
+    id: image_effects_mask
+    weight: 3
+    data:
+      mask_image: ../web/masks/MaskSpiral.png
+      mask_width: 100%
+      mask_height: ''
+      placement: center-center
+      x_offset: ''
+      y_offset: ''

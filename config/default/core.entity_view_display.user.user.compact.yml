@@ -1,0 +1,33 @@
+uuid: b937f014-f0da-41ff-a7d7-e4b41cbb2292
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_media_image
+    - field.field.user.user.user_picture
+    - image.style.mask_circle_32x32
+  module:
+    - media
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  field_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: mask_circle_32x32
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  member_for: true
+  user_picture: true

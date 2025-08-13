@@ -1,0 +1,9 @@
+uuid: 7ef1593e-0b1e-417d-85f6-1415bdaa0946
+langcode: en
+status: true
+dependencies: {  }
+name: 'Media folder'
+vid: folder
+description: "Organize Media into virtual 'folders'"
+weight: 0
+new_revision: false

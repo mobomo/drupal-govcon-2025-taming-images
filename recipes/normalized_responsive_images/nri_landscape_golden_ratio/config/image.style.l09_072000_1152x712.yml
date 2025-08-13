@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l09_072000_1152x712
+label: 'NIS Landscape Golden Ratio - size 72 (1152x712)'
+effects:
+  a56078c4-7225-45fc-8f09-b1beabbbe9f6:
+    uuid: a56078c4-7225-45fc-8f09-b1beabbbe9f6
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1152
+      height: 712
+      crop_type: focal_point
+  d02f19c3-cf90-4149-a08e-790bfce65b79:
+    uuid: d02f19c3-cf90-4149-a08e-790bfce65b79
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

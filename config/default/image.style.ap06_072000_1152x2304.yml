@@ -1,0 +1,26 @@
+uuid: e781a8f3-101f-48cb-abbb-6fad98bf7910
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.p06_portrait_1_2
+  module:
+    - crop
+name: ap06_072000_1152x2304
+label: 'ART Portrait 1:2 - size 72 (1152x2304)'
+effects:
+  04f7a2fc-24ef-4d4b-b173-f5621aa2ca68:
+    uuid: 04f7a2fc-24ef-4d4b-b173-f5621aa2ca68
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: p06_portrait_1_2
+      automatic_crop_provider: null
+  a06c5966-c359-48b3-8983-f8d0a93ba038:
+    uuid: a06c5966-c359-48b3-8983-f8d0a93ba038
+    id: image_scale
+    weight: 2
+    data:
+      width: 1152
+      height: null
+      upscale: true

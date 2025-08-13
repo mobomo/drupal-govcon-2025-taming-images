@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.p04_008000_128x207
+    - image.style.p04_016000_256x414
+    - image.style.p04_024000_384x621
+    - image.style.p04_032000_512x828
+    - image.style.p04_040000_640x1036
+    - image.style.p04_048000_768x1243
+    - image.style.p04_056000_896x1450
+    - image.style.p04_064000_1024x1657
+    - image.style.p04_072000_1152x1864
+    - image.style.p04_088000_1408x2278
+    - image.style.p04_104000_1664x2692
+    - image.style.p04_120000_1920x3107
+    - image.style.p04_136000_2176x3521
+    - image.style.p04_160000_2560x4142
+    - image.style.p04_184000_2944x4763
+    - image.style.p04_208000_3328x5385
+    - image.style.p04_240000_3840x6213
+id: portrait_golden_ratio
+label: 'Portrait Golden Ratio'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - p04_008000_128x207
+        - p04_016000_256x414
+        - p04_024000_384x621
+        - p04_032000_512x828
+        - p04_040000_640x1036
+        - p04_048000_768x1243
+        - p04_056000_896x1450
+        - p04_064000_1024x1657
+        - p04_072000_1152x1864
+        - p04_088000_1408x2278
+        - p04_104000_1664x2692
+        - p04_120000_1920x3107
+        - p04_136000_2176x3521
+        - p04_160000_2560x4142
+        - p04_184000_2944x4763
+        - p04_208000_3328x5385
+        - p04_240000_3840x6213
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: p04_064000_1024x1657

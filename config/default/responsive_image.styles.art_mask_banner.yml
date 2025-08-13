@@ -1,0 +1,30 @@
+uuid: adc7080d-c5a6-4718-85c2-4a78065cfae7
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.mask_frame_512x1024
+    - image.style.mask_halftone_1024x576
+    - image.style.mask_strokes_1024x288
+  theme:
+    - mobomo
+id: art_mask_banner
+label: 'Art Mask Banner'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: mask_strokes_1024x288
+    breakpoint_id: mobomo.desktop-lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mask_halftone_1024x576
+    breakpoint_id: mobomo.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mask_frame_512x1024
+    breakpoint_id: mobomo.smallest
+    multiplier: 1x
+breakpoint_group: mobomo
+fallback_image_style: mask_strokes_1024x288

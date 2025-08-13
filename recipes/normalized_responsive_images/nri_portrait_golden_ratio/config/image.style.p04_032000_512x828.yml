@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p04_032000_512x828
+label: 'NIS Portrait Golden Ratio - size 32 (512x828)'
+effects:
+  c56a3207-74cf-4789-bef4-ade9de045976:
+    uuid: c56a3207-74cf-4789-bef4-ade9de045976
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 512
+      height: 828
+      crop_type: focal_point
+  fdf95438-3c7c-4555-a407-e04704c74e41:
+    uuid: fdf95438-3c7c-4555-a407-e04704c74e41
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

@@ -1,0 +1,13 @@
+uuid: 3074fa1d-2fae-4ddd-b611-d0ac3b79369b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 55Btooz8bERt1t7IQicO20tlIYqEzGWmN4BmFTw7jIk
+id: media.scaled_max
+label: Scaled
+description: ''
+targetEntityType: media
+cache: true

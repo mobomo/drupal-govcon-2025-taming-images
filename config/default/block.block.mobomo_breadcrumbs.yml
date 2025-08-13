@@ -1,0 +1,22 @@
+uuid: 92f48c21-f511-4060-83b0-b68314cf8f7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: zOoMDj6M0s6bLtOTDjFluAhg13kB9s2jJaialb8UfnE
+id: mobomo_breadcrumbs
+theme: mobomo
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

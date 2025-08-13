@@ -1,0 +1,21 @@
+uuid: 8c3bb5e3-bda5-4ac6-88c6-484f8ae60476
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.schema_height
+field_name: schema_height
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

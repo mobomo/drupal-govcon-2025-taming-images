@@ -1,0 +1,27 @@
+uuid: f509a62b-d878-4707-a730-ce050f8af035
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: 5UvltkEh7-_d00kn5sCgWj7KGUe_DQz4sTdUmMgMX4c
+id: mobomo_account_menu
+theme: mobomo
+region: navbar
+weight: -4
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

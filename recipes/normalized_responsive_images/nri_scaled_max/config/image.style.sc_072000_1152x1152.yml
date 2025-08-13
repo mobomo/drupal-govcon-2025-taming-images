@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_072000_1152x1152
+label: 'NIS Scaled Max - size 72 (1152x1152)'
+effects:
+  b446446c-2423-49d1-a453-a89cd8545ba3:
+    uuid: b446446c-2423-49d1-a453-a89cd8545ba3
+    id: image_scale
+    weight: 0
+    data:
+      width: 1152
+      height: 1152
+      upscale: true
+  082caa28-6f2e-4425-86d9-a84aba95aaf6:
+    uuid: 082caa28-6f2e-4425-86d9-a84aba95aaf6
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p06_072000_1152x2304
+label: 'NIS Portrait 1:2 - size 72 (1152x2304)'
+effects:
+  09ddd757-e0fd-4a28-982d-9aa3eaa0e73d:
+    uuid: 09ddd757-e0fd-4a28-982d-9aa3eaa0e73d
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1152
+      height: 2304
+      crop_type: focal_point
+  bd36f781-7b4f-425a-8b0a-165e83397655:
+    uuid: bd36f781-7b4f-425a-8b0a-165e83397655
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

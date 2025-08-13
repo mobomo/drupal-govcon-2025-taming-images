@@ -1,0 +1,9 @@
+uuid: 52ffe234-f339-496b-aab7-fa44c5fef9f2
+langcode: en
+status: true
+dependencies: {  }
+name: About
+vid: about
+description: 'Just another taxonomy about something'
+weight: 0
+new_revision: false

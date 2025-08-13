@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: sq_040000_640x640
+label: 'NIS Square 1:1 - size 40 (640x640)'
+effects:
+  5016ee50-dd7d-453a-b41a-3bc279ed2962:
+    uuid: 5016ee50-dd7d-453a-b41a-3bc279ed2962
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 640
+      crop_type: focal_point
+  29990856-d251-44d0-834e-0539be4204eb:
+    uuid: 29990856-d251-44d0-834e-0539be4204eb
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_160000_2560x2560
+label: 'NIS Scaled Max - size 160 (2560x2560)'
+effects:
+  11b7b4b1-1b6e-40b6-9646-9298a58d60b9:
+    uuid: 11b7b4b1-1b6e-40b6-9646-9298a58d60b9
+    id: image_scale
+    weight: 0
+    data:
+      width: 2560
+      height: 2560
+      upscale: true
+  53531624-c7c7-494e-a1f6-e62d53001788:
+    uuid: 53531624-c7c7-494e-a1f6-e62d53001788
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 40

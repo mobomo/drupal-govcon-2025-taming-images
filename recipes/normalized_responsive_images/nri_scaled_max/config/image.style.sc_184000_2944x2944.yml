@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_184000_2944x2944
+label: 'NIS Scaled Max - size 184 (2944x2944)'
+effects:
+  1f85c582-5444-46f6-9281-6c06c45a630a:
+    uuid: 1f85c582-5444-46f6-9281-6c06c45a630a
+    id: image_scale
+    weight: 0
+    data:
+      width: 2944
+      height: 2944
+      upscale: true
+  d83609f9-e9b4-4a58-a291-16ab7c20fae5:
+    uuid: d83609f9-e9b4-4a58-a291-16ab7c20fae5
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 35

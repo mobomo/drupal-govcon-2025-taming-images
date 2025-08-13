@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l06_120000_1920x1013
+label: 'NIS Landscape DCI - size 120 (1920x1013)'
+effects:
+  e59560ee-fe68-4ce1-8d98-3292f85d74c9:
+    uuid: e59560ee-fe68-4ce1-8d98-3292f85d74c9
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 1013
+      crop_type: focal_point
+  34c80876-f49c-4274-9249-50cd6ee20254:
+    uuid: 34c80876-f49c-4274-9249-50cd6ee20254
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

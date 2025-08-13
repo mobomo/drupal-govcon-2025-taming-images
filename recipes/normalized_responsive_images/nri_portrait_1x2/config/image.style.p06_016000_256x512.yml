@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p06_016000_256x512
+label: 'NIS Portrait 1:2 - size 16 (256x512)'
+effects:
+  7ec5a5b6-6a21-42f0-b32b-3213e81da5fd:
+    uuid: 7ec5a5b6-6a21-42f0-b32b-3213e81da5fd
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 256
+      height: 512
+      crop_type: focal_point
+  6a402b12-5475-437f-858f-7195278de83e:
+    uuid: 6a402b12-5475-437f-858f-7195278de83e
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

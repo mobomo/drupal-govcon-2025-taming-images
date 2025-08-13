@@ -1,0 +1,67 @@
+uuid: d2d2cc04-5a19-4186-b05a-331e3a0225d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.al01_088000_1408x396
+    - image.style.al01_104000_1664x468
+    - image.style.al01_120000_1920x540
+    - image.style.al01_240000_3840x1080
+    - image.style.al08_040000_640x360
+    - image.style.al08_048000_768x432
+    - image.style.al08_056000_896x504
+    - image.style.al08_064000_1024x576
+    - image.style.al08_072000_1152x648
+    - image.style.al08_088000_1408x792
+    - image.style.al08_160000_2560x1440
+    - image.style.ap06_008000_128x256
+    - image.style.ap06_016000_256x512
+    - image.style.ap06_024000_384x768
+    - image.style.ap06_032000_512x1024
+    - image.style.ap06_040000_640x1280
+    - image.style.ap06_072000_1152x2304
+  theme:
+    - mobomo
+id: art_banner
+label: 'Art Banner'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - al01_088000_1408x396
+        - al01_104000_1664x468
+        - al01_120000_1920x540
+        - al01_240000_3840x1080
+    breakpoint_id: mobomo.desktop-lg
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - al08_040000_640x360
+        - al08_048000_768x432
+        - al08_056000_896x504
+        - al08_064000_1024x576
+        - al08_072000_1152x648
+        - al08_088000_1408x792
+        - al08_160000_2560x1440
+    breakpoint_id: mobomo.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - ap06_008000_128x256
+        - ap06_016000_256x512
+        - ap06_024000_384x768
+        - ap06_032000_512x1024
+        - ap06_040000_640x1280
+        - ap06_072000_1152x2304
+    breakpoint_id: mobomo.smallest
+    multiplier: 1x
+breakpoint_group: mobomo
+fallback_image_style: al01_120000_1920x540

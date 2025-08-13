@@ -1,0 +1,46 @@
+name: 'Normalized Responsive Images'
+description: 'A recipe tailored to best practices for displaying aspect ratio based responsive images using custom image view modes. Aspect ratios are derived from common options at https://en.wikipedia.org/wiki/List_of_common_display_resolutions.'
+type: 'Media type'
+recipes:
+  - nri_image_media_type
+  - nri_landscape_32x9
+  - nri_landscape_3x1
+  - nri_landscape_anamorphic
+  - nri_landscape_21x9
+  - nri_landscape_2x1
+  - nri_landscape_dci
+  - nri_landscape_widescreen
+  - nri_landscape_16x9
+  - nri_landscape_golden_ratio
+  - nri_landscape_3x2
+  - nri_landscape_4x3
+  - nri_landscape_5x4
+  - nri_portrait_4x5
+  - nri_portrait_3x4
+  - nri_portrait_2x3
+  - nri_portrait_golden_ratio
+  - nri_portrait_9x16
+  - nri_portrait_1x2
+  - nri_scaled_max
+  - nri_square_1x1
+  - nri_demo
+install:
+  - focal_point
+  - image
+  - field
+  - text
+  - path
+config:
+  import:
+    image:
+      - image.settings
+  actions:
+    file.settings:
+      simple_config_update:
+        filename_sanitization:
+          transliterate: true
+          replace_whitespace: true
+          replace_non_alphanumeric: true
+          deduplicate_separators: true
+          lowercase: true
+          replacement_character: '-'

@@ -1,0 +1,29 @@
+uuid: ac542f63-b3b3-4e7c-8781-52057f8ce0f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_term_media_folder
+    - media.type.image
+    - taxonomy.vocabulary.folder
+id: media.image.field_term_media_folder
+field_name: field_term_media_folder
+entity_type: media
+bundle: image
+label: 'Media Folder'
+description: "<p><strong>You can add new 'folders' to this list.</strong></p>\r\n<ol>\r\n<li>Start by typing to see current folders names, and selecting the appropriate one if it already exists.</li>\r\n<li>If the folder doesn't exist, check your spelling, and submit the form with the new 'folder' name.</li>\r\n</ol>\r\n<p><strong>Anything</strong> you put in this field will become a <em>new 'folder' name</em> if it doesn't already exists, so always start by checking first, and always check your spelling.</p>"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      folder: folder
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,35 @@
+uuid: fa5d3633-09e4-4e0a-aca6-9be5370fb650
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_effects
+name: mask_strokes_1024x288
+label: 'Mask - Strokes (1024x288)'
+effects:
+  ac82e731-3df5-4ad2-ac63-ee7e028208c2:
+    uuid: ac82e731-3df5-4ad2-ac63-ee7e028208c2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 288
+      crop_type: focal_point
+  8a56b5fe-1df0-4e70-b5aa-2b877e72f2d5:
+    uuid: 8a56b5fe-1df0-4e70-b5aa-2b877e72f2d5
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+  7f703b6e-3170-4c70-bc20-8095df666e01:
+    uuid: 7f703b6e-3170-4c70-bc20-8095df666e01
+    id: image_effects_mask
+    weight: 3
+    data:
+      mask_image: ../web/masks/MaskStrokes.png
+      mask_width: 100%
+      mask_height: 100%
+      placement: center-center
+      x_offset: ''
+      y_offset: ''

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p04_240000_3840x6213
+label: 'NIS Portrait Golden Ratio - size 240 (3840x6213)'
+effects:
+  53f4a915-4d46-4135-bf10-897d43ed178e:
+    uuid: 53f4a915-4d46-4135-bf10-897d43ed178e
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3840
+      height: 6213
+      crop_type: focal_point
+  7276ad89-61fe-40a4-89dc-e63bd062b71c:
+    uuid: 7276ad89-61fe-40a4-89dc-e63bd062b71c
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 25

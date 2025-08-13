@@ -1,0 +1,35 @@
+uuid: 16d86b80-65c9-454c-8b6e-3fe6c75f0d70
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_effects
+name: mask_hexagon_1024x1024
+label: 'Mask - Hexagon (1024x1024)'
+effects:
+  360a943e-d90e-4563-85e6-a61308854bfc:
+    uuid: 360a943e-d90e-4563-85e6-a61308854bfc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 1024
+      crop_type: focal_point
+  1b842b01-fdb4-450a-bdfa-be9fe1176e92:
+    uuid: 1b842b01-fdb4-450a-bdfa-be9fe1176e92
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+  69c36b70-7f5b-4acb-bec0-f9ae26b08051:
+    uuid: 69c36b70-7f5b-4acb-bec0-f9ae26b08051
+    id: image_effects_mask
+    weight: 3
+    data:
+      mask_image: ../web/masks/MaskHexagon.png
+      mask_width: 100%
+      mask_height: ''
+      placement: center-center
+      x_offset: ''
+      y_offset: ''

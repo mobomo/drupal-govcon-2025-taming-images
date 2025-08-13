@@ -1,0 +1,14 @@
+name: 'Normalized Responsive Images demo'
+description: 'A recipe for demoing responsive images using custom image view modes.'
+type: 'Media type'
+recipes:
+  - nri_image_media_type
+  - core/recipes/standard_responsive_images
+install:
+  - crop
+  - focal_point
+  - image_style_quality
+config:
+  actions:
+    views.view.normalized_responsive_images:
+      enable: []

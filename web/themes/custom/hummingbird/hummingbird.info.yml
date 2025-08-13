@@ -1,0 +1,5 @@
+name: 'Hummingbird'
+type: theme
+description: 'Hummingbird Gin subtheme'
+core_version_requirement: '^11'
+base theme: gin

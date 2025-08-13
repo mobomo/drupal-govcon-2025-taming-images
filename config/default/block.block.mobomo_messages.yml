@@ -1,0 +1,22 @@
+uuid: 25a3a18a-4c35-43d7-9338-ab9fa1d695e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: APZpVF8Sl0_5EdwX1926_TExTmSo8b-SU0_pEkP_8Xk
+id: mobomo_messages
+theme: mobomo
+region: messages
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

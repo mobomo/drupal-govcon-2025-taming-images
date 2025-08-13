@@ -1,0 +1,22 @@
+uuid: 8d9745a6-b082-4d72-85b7-0590836dedd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hummingbird
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: hummingbird_powered
+theme: hummingbird
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

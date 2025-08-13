@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l05_040000_640x320
+label: 'NIS Landscape 2:1 - size 40 (640x320)'
+effects:
+  19888862-3bcf-4228-910e-f45e8755fb60:
+    uuid: 19888862-3bcf-4228-910e-f45e8755fb60
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 320
+      crop_type: focal_point
+  c59125c4-b66c-410e-abc6-7d48be9c8471:
+    uuid: c59125c4-b66c-410e-abc6-7d48be9c8471
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

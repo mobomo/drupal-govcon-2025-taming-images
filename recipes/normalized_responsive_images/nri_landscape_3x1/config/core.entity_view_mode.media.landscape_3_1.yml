@@ -1,0 +1,11 @@
+uuid: d9ff1168-4382-49e3-9354-0727e7d61e7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.landscape_3_1
+label: 'L 3:1'
+description: ''
+targetEntityType: media
+cache: true

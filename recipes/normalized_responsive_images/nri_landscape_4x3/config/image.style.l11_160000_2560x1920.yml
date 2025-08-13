@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l11_160000_2560x1920
+label: 'NIS Landscape 4:3 - size 160 (2560x1920)'
+effects:
+  e1a248b1-f0b2-4c98-a2e5-28444a436187:
+    uuid: e1a248b1-f0b2-4c98-a2e5-28444a436187
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2560
+      height: 1920
+      crop_type: focal_point
+  9c6b3c3a-6354-4651-8293-1d1ac2be11ac:
+    uuid: 9c6b3c3a-6354-4651-8293-1d1ac2be11ac
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 40

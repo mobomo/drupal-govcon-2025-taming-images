@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p02_104000_1664x2219
+label: 'NIS Portrait 3:4 - size 104 (1664x2219)'
+effects:
+  66882efb-5a33-4fad-aefd-e8bcadf66a26:
+    uuid: 66882efb-5a33-4fad-aefd-e8bcadf66a26
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1664
+      height: 2219
+      crop_type: focal_point
+  452b3cc0-f862-4a35-90dc-06efc9ed3868:
+    uuid: 452b3cc0-f862-4a35-90dc-06efc9ed3868
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

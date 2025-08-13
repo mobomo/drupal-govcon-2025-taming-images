@@ -1,0 +1,27 @@
+uuid: 06e93422-fa9b-4e06-a34c-edea512d7072
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: g0PAV1X7E6-LPfX32mnhC8aBoXraLZHKw681UjbIpoU
+id: mobomo_tools
+theme: mobomo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l05_160000_2560x1280
+label: 'NIS Landscape 2:1 - size 160 (2560x1280)'
+effects:
+  2f644140-8205-468c-8a81-3846fa156ff0:
+    uuid: 2f644140-8205-468c-8a81-3846fa156ff0
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2560
+      height: 1280
+      crop_type: focal_point
+  10fbc17a-ab69-472c-a372-3c7681f12423:
+    uuid: 10fbc17a-ab69-472c-a372-3c7681f12423
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 40

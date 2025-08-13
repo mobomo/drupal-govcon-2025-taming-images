@@ -1,0 +1,11 @@
+uuid: afa0fafb-a49f-44fc-9d48-78af0b784d7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portrait_4_5
+label: 'P 4:5'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l12_072000_1152x922
+label: 'NIS Landscape 5:4 - size 72 (1152x922)'
+effects:
+  d9b4e681-0014-4cbc-a2d0-2ef81ba1bd5b:
+    uuid: d9b4e681-0014-4cbc-a2d0-2ef81ba1bd5b
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1152
+      height: 922
+      crop_type: focal_point
+  2b250fd1-82a7-4437-8a88-4e4c4dac55bb:
+    uuid: 2b250fd1-82a7-4437-8a88-4e4c4dac55bb
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

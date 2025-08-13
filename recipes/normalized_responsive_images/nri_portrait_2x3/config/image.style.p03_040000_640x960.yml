@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p03_040000_640x960
+label: 'NIS Portrait 2:3 - size 40 (640x960)'
+effects:
+  d8491208-57bd-4883-ba33-31cd92fd3b4c:
+    uuid: d8491208-57bd-4883-ba33-31cd92fd3b4c
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 960
+      crop_type: focal_point
+  c015323e-8904-4076-987a-e3f06b454630:
+    uuid: c015323e-8904-4076-987a-e3f06b454630
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

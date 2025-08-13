@@ -1,0 +1,11 @@
+uuid: 61d0acf2-6078-47b9-b4e1-c850e4b1225f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.art_mask_square
+label: 'Art Mask Square'
+description: null
+targetEntityType: media
+cache: true

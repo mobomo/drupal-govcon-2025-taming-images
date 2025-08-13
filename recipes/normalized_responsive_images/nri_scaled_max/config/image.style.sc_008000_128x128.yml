@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_008000_128x128
+label: 'NIS Scaled Max - size 8 (128x128)'
+effects:
+  38feb541-860a-4c00-9489-ad8858fcd1a2:
+    uuid: 38feb541-860a-4c00-9489-ad8858fcd1a2
+    id: image_scale
+    weight: 0
+    data:
+      width: 128
+      height: 128
+      upscale: true
+  a3b956eb-cb6f-4df0-9159-87aae235a028:
+    uuid: a3b956eb-cb6f-4df0-9159-87aae235a028
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

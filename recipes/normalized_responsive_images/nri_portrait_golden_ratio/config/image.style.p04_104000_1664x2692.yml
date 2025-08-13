@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p04_104000_1664x2692
+label: 'NIS Portrait Golden Ratio - size 104 (1664x2692)'
+effects:
+  83b8178e-e999-4d1d-85b0-14a825a6a60a:
+    uuid: 83b8178e-e999-4d1d-85b0-14a825a6a60a
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1664
+      height: 2692
+      crop_type: focal_point
+  17a12584-e784-4273-bc06-d2431af358e1:
+    uuid: 17a12584-e784-4273-bc06-d2431af358e1
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

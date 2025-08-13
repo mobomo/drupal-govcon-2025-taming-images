@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l11_120000_1920x1440
+label: 'NIS Landscape 4:3 - size 120 (1920x1440)'
+effects:
+  974d7911-95e2-4229-8c0c-652b86a64530:
+    uuid: 974d7911-95e2-4229-8c0c-652b86a64530
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 1440
+      crop_type: focal_point
+  2378b24c-1a2f-4fce-85f9-b48c9c653c06:
+    uuid: 2378b24c-1a2f-4fce-85f9-b48c9c653c06
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

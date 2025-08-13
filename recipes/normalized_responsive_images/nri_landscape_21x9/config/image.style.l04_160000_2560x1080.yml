@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l04_160000_2560x1080
+label: 'NIS Landscape 21:9 - size 160 (2560x1080)'
+effects:
+  929f74ac-8224-4ed6-a0b2-a5665cabd89d:
+    uuid: 929f74ac-8224-4ed6-a0b2-a5665cabd89d
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2560
+      height: 1080
+      crop_type: focal_point
+  1bb0740d-efcc-4bd1-a981-676080ed656b:
+    uuid: 1bb0740d-efcc-4bd1-a981-676080ed656b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 40

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p05_048000_768x1365
+label: 'NIS Portrait 9:16 - size 48 (768x1365)'
+effects:
+  38ba4f26-f78b-46fe-a5f9-bca7beb9df16:
+    uuid: 38ba4f26-f78b-46fe-a5f9-bca7beb9df16
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 768
+      height: 1365
+      crop_type: focal_point
+  c94b72ca-4505-4b6c-8c63-31fed44b0f40:
+    uuid: c94b72ca-4505-4b6c-8c63-31fed44b0f40
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

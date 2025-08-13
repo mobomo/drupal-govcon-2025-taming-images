@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l11_240000_3840x2880
+label: 'NIS Landscape 4:3 - size 240 (3840x2880)'
+effects:
+  ca3d8604-f755-439d-bb34-d71455b4e9bb:
+    uuid: ca3d8604-f755-439d-bb34-d71455b4e9bb
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3840
+      height: 2880
+      crop_type: focal_point
+  4f902e03-5565-4304-88df-3e7fc32b3daa:
+    uuid: 4f902e03-5565-4304-88df-3e7fc32b3daa
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 25

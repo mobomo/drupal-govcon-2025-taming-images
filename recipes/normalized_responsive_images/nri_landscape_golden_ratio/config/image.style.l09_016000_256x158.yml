@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l09_016000_256x158
+label: 'NIS Landscape Golden Ratio - size 16 (256x158)'
+effects:
+  7aacd1a3-d81d-41bd-b17d-6a4fbbaf9193:
+    uuid: 7aacd1a3-d81d-41bd-b17d-6a4fbbaf9193
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 256
+      height: 158
+      crop_type: focal_point
+  06b90230-1fad-4e70-89f5-940c9da3d82b:
+    uuid: 06b90230-1fad-4e70-89f5-940c9da3d82b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

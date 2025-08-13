@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l09_120000_1920x1187
+label: 'NIS Landscape Golden Ratio - size 120 (1920x1187)'
+effects:
+  59e99afe-c127-4413-b470-ab191fee4e84:
+    uuid: 59e99afe-c127-4413-b470-ab191fee4e84
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 1187
+      crop_type: focal_point
+  ce53621c-563a-4ff5-8b34-9a47327b727b:
+    uuid: ce53621c-563a-4ff5-8b34-9a47327b727b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

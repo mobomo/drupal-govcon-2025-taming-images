@@ -1,0 +1,12 @@
+uuid: 74643aa5-8c2e-4f4f-89ea-4dc02c535db1
+langcode: en
+status: true
+dependencies: {  }
+label: 'Landscape 32:9'
+id: l01_landscape_32_9
+description: ''
+aspect_ratio: '32:9'
+soft_limit_width: 1920
+soft_limit_height: 540
+hard_limit_width: 1024
+hard_limit_height: 288

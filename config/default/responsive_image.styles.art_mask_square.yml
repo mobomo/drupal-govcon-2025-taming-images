@@ -1,0 +1,30 @@
+uuid: 9a605511-8a2c-437c-b4a3-6bd6454c1aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.mask_circle_256x256
+    - image.style.mask_hexagon_1024x1024
+    - image.style.mask_spiral_640x640
+  theme:
+    - mobomo
+id: art_mask_square
+label: 'Art Mask Square'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: mask_hexagon_1024x1024
+    breakpoint_id: mobomo.desktop-lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mask_spiral_640x640
+    breakpoint_id: mobomo.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mask_circle_256x256
+    breakpoint_id: mobomo.smallest
+    multiplier: 1x
+breakpoint_group: mobomo
+fallback_image_style: mask_hexagon_1024x1024

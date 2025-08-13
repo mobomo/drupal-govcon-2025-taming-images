@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p06_056000_896x1792
+label: 'NIS Portrait 1:2 - size 56 (896x1792)'
+effects:
+  700d5f89-9071-49fc-ba56-20c5c3615304:
+    uuid: 700d5f89-9071-49fc-ba56-20c5c3615304
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 896
+      height: 1792
+      crop_type: focal_point
+  b64d4018-fbb0-4477-9f21-023a0d42dbd9:
+    uuid: b64d4018-fbb0-4477-9f21-023a0d42dbd9
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

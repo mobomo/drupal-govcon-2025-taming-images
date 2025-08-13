@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_048000_768x768
+label: 'NIS Scaled Max - size 48 (768x768)'
+effects:
+  2a5982b5-0b93-4316-8fb9-c30f3068f823:
+    uuid: 2a5982b5-0b93-4316-8fb9-c30f3068f823
+    id: image_scale
+    weight: 0
+    data:
+      width: 768
+      height: 768
+      upscale: true
+  4b2004e4-78f4-472f-8016-632d9c6ba83e:
+    uuid: 4b2004e4-78f4-472f-8016-632d9c6ba83e
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

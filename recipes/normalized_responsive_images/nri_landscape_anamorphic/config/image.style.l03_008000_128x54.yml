@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l03_008000_128x54
+label: 'NIS Landscape Anamorphic - size 8 (128x54)'
+effects:
+  3effcaba-69a0-4609-a0d6-0fe8fa3f8d70:
+    uuid: 3effcaba-69a0-4609-a0d6-0fe8fa3f8d70
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 128
+      height: 54
+      crop_type: focal_point
+  1b139966-18bd-4cae-bd7c-91796ded674e:
+    uuid: 1b139966-18bd-4cae-bd7c-91796ded674e
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

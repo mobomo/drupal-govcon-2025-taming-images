@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l07_120000_1920x1038
+label: 'NIS Landscape Widescreen - size 120 (1920x1038)'
+effects:
+  e312430f-6f5b-40af-aed2-facf3b81b470:
+    uuid: e312430f-6f5b-40af-aed2-facf3b81b470
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 1038
+      crop_type: focal_point
+  b121fe70-676d-4488-bf24-305352c8ec68:
+    uuid: b121fe70-676d-4488-bf24-305352c8ec68
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

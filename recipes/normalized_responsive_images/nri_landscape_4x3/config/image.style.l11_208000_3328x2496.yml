@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l11_208000_3328x2496
+label: 'NIS Landscape 4:3 - size 208 (3328x2496)'
+effects:
+  a588078d-4f4f-410e-9f80-b90e96c3820c:
+    uuid: a588078d-4f4f-410e-9f80-b90e96c3820c
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3328
+      height: 2496
+      crop_type: focal_point
+  ca2c52f4-074f-4274-b584-b6d52e48b3aa:
+    uuid: ca2c52f4-074f-4274-b584-b6d52e48b3aa
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 30

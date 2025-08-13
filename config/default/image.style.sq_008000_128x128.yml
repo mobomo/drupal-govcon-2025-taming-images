@@ -1,0 +1,26 @@
+uuid: 54f3bcaf-3dc1-4304-ac6b-91b345ea7d9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+_core:
+  default_config_hash: GDR4yZWvZkUit8ySAkWWse-fWlPCEt2i4ffUjyI8Qew
+name: sq_008000_128x128
+label: 'NIS Square 1:1 - size 8 (128x128)'
+effects:
+  0a47e79b-2319-413d-8b92-48687bf24472:
+    uuid: 0a47e79b-2319-413d-8b92-48687bf24472
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 128
+      height: 128
+      crop_type: focal_point
+  2cc58b2b-4c78-4e91-a8e9-b647658e1383:
+    uuid: 2cc58b2b-4c78-4e91-a8e9-b647658e1383
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

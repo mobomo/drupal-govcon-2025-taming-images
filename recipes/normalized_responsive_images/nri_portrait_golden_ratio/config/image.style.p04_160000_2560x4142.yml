@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p04_160000_2560x4142
+label: 'NIS Portrait Golden Ratio - size 160 (2560x4142)'
+effects:
+  fde8bc0f-d972-440a-86b2-3966b3376b12:
+    uuid: fde8bc0f-d972-440a-86b2-3966b3376b12
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2560
+      height: 4142
+      crop_type: focal_point
+  1127a3d0-81da-4b64-8a94-1fef91d2e4ab:
+    uuid: 1127a3d0-81da-4b64-8a94-1fef91d2e4ab
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 40

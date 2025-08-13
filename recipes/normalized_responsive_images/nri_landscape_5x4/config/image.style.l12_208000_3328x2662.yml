@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l12_208000_3328x2662
+label: 'NIS Landscape 5:4 - size 208 (3328x2662)'
+effects:
+  9b565450-0743-45df-a19b-b45a567b35c7:
+    uuid: 9b565450-0743-45df-a19b-b45a567b35c7
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3328
+      height: 2662
+      crop_type: focal_point
+  f2aad487-8887-4bbb-a631-6f07933eabaa:
+    uuid: f2aad487-8887-4bbb-a631-6f07933eabaa
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 30

@@ -1,0 +1,22 @@
+uuid: 7c8d5147-eff6-445f-99e1-0006e184d9e8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hummingbird
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: hummingbird_primary_local_tasks
+theme: hummingbird
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

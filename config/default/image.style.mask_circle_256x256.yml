@@ -1,0 +1,35 @@
+uuid: 66c9f6c9-6240-4e35-8958-9762ad8b51b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_effects
+name: mask_circle_256x256
+label: 'Mask - Circle (256x256)'
+effects:
+  2135cfe9-015f-4dca-ad00-d7319efb1372:
+    uuid: 2135cfe9-015f-4dca-ad00-d7319efb1372
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 256
+      height: 256
+      crop_type: focal_point
+  45141d10-2be1-42b8-869e-ea5e755485cd:
+    uuid: 45141d10-2be1-42b8-869e-ea5e755485cd
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+  3213dfe1-b74a-45fc-9219-7ee6f807d4d8:
+    uuid: 3213dfe1-b74a-45fc-9219-7ee6f807d4d8
+    id: image_effects_mask
+    weight: 3
+    data:
+      mask_image: ../web/masks/MaskCircle.png
+      mask_width: 100%
+      mask_height: ''
+      placement: center-center
+      x_offset: ''
+      y_offset: ''

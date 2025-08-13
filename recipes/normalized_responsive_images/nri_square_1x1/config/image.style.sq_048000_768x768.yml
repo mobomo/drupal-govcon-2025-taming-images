@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: sq_048000_768x768
+label: 'NIS Square 1:1 - size 48 (768x768)'
+effects:
+  eab02622-094e-4a05-b944-b26a1942ac97:
+    uuid: eab02622-094e-4a05-b944-b26a1942ac97
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 768
+      height: 768
+      crop_type: focal_point
+  443fb952-d250-4e3f-96d6-afc4519b3f0c:
+    uuid: 443fb952-d250-4e3f-96d6-afc4519b3f0c
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

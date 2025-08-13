@@ -1,0 +1,22 @@
+uuid: b2da41ad-3aca-450b-a5b8-839d075d51fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hummingbird
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: hummingbird_content
+theme: hummingbird
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

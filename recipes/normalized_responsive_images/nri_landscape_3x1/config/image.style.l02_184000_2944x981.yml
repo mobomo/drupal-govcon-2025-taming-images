@@ -1,0 +1,24 @@
+uuid: 56ffe41d-7d0c-4261-b9ac-51778dac9e21
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l02_184000_2944x981
+label: 'NIS Landscape 3:1 - size 184 (2944x981)'
+effects:
+  009d2715-16ee-4e2d-a41e-40adf69151a8:
+    uuid: 009d2715-16ee-4e2d-a41e-40adf69151a8
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2944
+      height: 981
+      crop_type: focal_point
+  b6f88df2-ea93-4665-bacb-1e78c740d48b:
+    uuid: b6f88df2-ea93-4665-bacb-1e78c740d48b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 35

@@ -1,0 +1,41 @@
+{
+  "name": "drupal_recipe/normalized_responsive_images",
+  "description": "A recipe tailored to best practices for displaying aspect ratio based responsive images using custom image view modes.",
+  "type": "drupal-recipe",
+  "version": "dev-master",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+      {
+        "name": "Perry Brown (UpTil4Music)",
+        "homepage": "https://www.drupal.org/u/UpTil4Music",
+        "role": "Maintainer"
+      }
+    ],
+  "require": {
+    "drupal/core-recommended": "~10",
+    "drupal/focal_point": "^2.0",
+    "drupal/image_style_quality": "^1.6",
+    "drupal_recipe/nri_image_media_type": "*",
+    "drupal_recipe/nri_landscape_32x9": "*",
+    "drupal_recipe/nri_landscape_3x1": "*",
+    "drupal_recipe/nri_landscape_anamorphic": "*",
+    "drupal_recipe/nri_landscape_21x9": "*",
+    "drupal_recipe/nri_landscape_2x1": "*",
+    "drupal_recipe/nri_landscape_dci": "*",
+    "drupal_recipe/nri_landscape_widescreen": "*",
+    "drupal_recipe/nri_landscape_16x9": "*",
+    "drupal_recipe/nri_landscape_golden_ratio": "*",
+    "drupal_recipe/nri_landscape_3x2": "*",
+    "drupal_recipe/nri_landscape_4x3": "*",
+    "drupal_recipe/nri_landscape_5x4": "*",
+    "drupal_recipe/nri_portrait_4x5": "*",
+    "drupal_recipe/nri_portrait_3x4": "*",
+    "drupal_recipe/nri_portrait_2x3": "*",
+    "drupal_recipe/nri_portrait_golden_ratio": "*",
+    "drupal_recipe/nri_portrait_9x16": "*",
+    "drupal_recipe/nri_portrait_1x2": "*",
+    "drupal_recipe/nri_scaled_max": "*",
+    "drupal_recipe/nri_square_1x1": "*",
+    "drupal_recipe/nri_demo": "*"
+  }
+}

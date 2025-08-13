@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l04_008000_128x54
+label: 'NIS Landscape 21:9 - size 8 (128x54)'
+effects:
+  f08d169c-0827-4423-ad36-c619beadfb5a:
+    uuid: f08d169c-0827-4423-ad36-c619beadfb5a
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 128
+      height: 54
+      crop_type: focal_point
+  765dccf7-faa7-4284-9b8b-2b5c4d57a7d7:
+    uuid: 765dccf7-faa7-4284-9b8b-2b5c4d57a7d7
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

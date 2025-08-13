@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l12_040000_640x512
+label: 'NIS Landscape 5:4 - size 40 (640x512)'
+effects:
+  cf597086-cc01-4d5d-9ff7-8ff228609325:
+    uuid: cf597086-cc01-4d5d-9ff7-8ff228609325
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 512
+      crop_type: focal_point
+  b6931adb-40bf-4c18-bddd-c85de9ea9840:
+    uuid: b6931adb-40bf-4c18-bddd-c85de9ea9840
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

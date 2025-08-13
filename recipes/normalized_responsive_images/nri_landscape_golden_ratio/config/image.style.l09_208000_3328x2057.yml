@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l09_208000_3328x2057
+label: 'NIS Landscape Golden Ratio - size 208 (3328x2057)'
+effects:
+  c9ab9a59-5ee8-4185-b50f-173865330a14:
+    uuid: c9ab9a59-5ee8-4185-b50f-173865330a14
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3328
+      height: 2057
+      crop_type: focal_point
+  8d36bc42-92fb-4dfc-a75d-3fd9e6385d10:
+    uuid: 8d36bc42-92fb-4dfc-a75d-3fd9e6385d10
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 30

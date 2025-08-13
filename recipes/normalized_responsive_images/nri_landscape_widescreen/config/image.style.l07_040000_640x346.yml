@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l07_040000_640x346
+label: 'NIS Landscape Widescreen - size 40 (640x346)'
+effects:
+  9fe36e06-75c5-4ef9-8039-1fe61c6f0460:
+    uuid: 9fe36e06-75c5-4ef9-8039-1fe61c6f0460
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 346
+      crop_type: focal_point
+  d56be14f-63b5-466b-8348-ff786da8ef2b:
+    uuid: d56be14f-63b5-466b-8348-ff786da8ef2b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

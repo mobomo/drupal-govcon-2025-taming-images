@@ -1,0 +1,133 @@
+diff --git a/api/realistic_dummy_content_api.module b/api/realistic_dummy_content_api.module
+index c3b7218a479b63c037335e6c31019efbe46ec4b0..598314362c76754dd81b21fec89706b0d6f305e2 100644
+--- a/api/realistic_dummy_content_api.module
++++ b/api/realistic_dummy_content_api.module
+@@ -116,7 +116,7 @@ function realistic_dummy_content_api_entity_presave($entity) {
+   // Hook implementations should never throw exceptions, so we'll catch them
+   // all here.
+   catch (\Throwable $e) {
+-    drupal_set_message($e->getMessage());
++    \Drupal::messenger()->addStatus($e->getMessage());
+   }
+ }
+ 
+diff --git a/api/src/includes/RealisticDummyContentEnvironment.php b/api/src/includes/RealisticDummyContentEnvironment.php
+index afb607905286275b46613e717f14beea19d4e398..1e4d79a00f7953a6393cdbd5550c5fae234911ef 100644
+--- a/api/src/includes/RealisticDummyContentEnvironment.php
++++ b/api/src/includes/RealisticDummyContentEnvironment.php
+@@ -210,19 +210,19 @@ abstract class RealisticDummyContentEnvironment {
+       if (!is_string($candidate_filename)) {
+         // Explicitly load the Exception class, because during unit tests the
+         // registry is not present.
+-        module_load_include('inc', 'realistic_dummy_content_api', 'includes/RealisticDummyContentException');
++        \Drupal::moduleHandler()->loadInclude('realistic_dummy_content_api', 'inc', 'includes/RealisticDummyContentException');
+         throw new RealisticDummyContentException('array keys should be strings');
+       }
+       if (!is_object($candidate_file)) {
+         // Explicitly load the Exception class, because during unit tests the
+         // registry is not present.
+-        module_load_include('inc', 'realistic_dummy_content_api', 'includes/RealisticDummyContentException');
++        \Drupal::moduleHandler()->loadInclude('realistic_dummy_content_api', 'inc', 'includes/RealisticDummyContentException');
+         throw new RealisticDummyContentException('array values should be file objects');
+       }
+       if (strpos($candidate_filename, '/') !== FALSE) {
+         // Explicitly load the Exception class, because during unit tests the
+         // registry is not present.
+-        module_load_include('inc', 'realistic_dummy_content_api', 'includes/RealisticDummyContentException');
++        \Drupal::moduleHandler()->loadInclude('realistic_dummy_content_api', 'inc', 'includes/RealisticDummyContentException');
+         throw new RealisticDummyContentException('Please do not pass file paths with slashes (/) to ' . __FUNCTION__);
+       }
+     }
+diff --git a/api/src/includes/RealisticDummyContentRecipe.php b/api/src/includes/RealisticDummyContentRecipe.php
+index e59807f950dd49eb7178117555a4ec5b309a233f..48103448c6729631e7e950acc0fb5904efd99aa8 100644
+--- a/api/src/includes/RealisticDummyContentRecipe.php
++++ b/api/src/includes/RealisticDummyContentRecipe.php
+@@ -89,7 +89,7 @@ abstract class RealisticDummyContentRecipe {
+     if (!preg_match('/use Drupal*/s', $contents)) {
+       throw new \Exception('As of the 2.x version you need to add the following line to the top of your recipe at ' . $fullpath . ': use Drupal\realistic_dummy_content_api\includes\RealisticDummyContentRecipe');
+     }
+-    return module_load_include('inc', $module, 'realistic_dummy_content/recipe/' . $module . '.recipe');
++    return \Drupal::moduleHandler()->loadInclude($module, 'inc', 'realistic_dummy_content/recipe/' . $module . '.recipe');
+   }
+ 
+   /**
+diff --git a/api/tests/src/Unit/Framework/Drupal8Test.php b/api/tests/src/Unit/Framework/Drupal8Test.php
+index 09ae524ff8b5e5a7d214574ec4334c88df23fa07..d1c0816eed2e7a5ad3058c4bfdabfc28bba5f7c1 100644
+--- a/api/tests/src/Unit/Framework/Drupal8Test.php
++++ b/api/tests/src/Unit/Framework/Drupal8Test.php
+@@ -30,11 +30,7 @@ class Drupal8Test extends TestCase {
+    * @dataProvider providerSetEntityProperty
+    */
+   public function testSetEntityProperty(string $message, $entity, $property, $value, $expected) {
+-    $object = $this->getMockBuilder(Drupal8::class)
+-      // NULL = no methods are mocked; otherwise list the methods here.
+-      ->setMethods(NULL)
+-      ->disableOriginalConstructor()
+-      ->getMock();
++    $object = $this->createMock(Drupal8::class);
+ 
+     $output = $entity;
+     $object->setEntityProperty($output, $property, $value);
+diff --git a/api/tests/src/Unit/includes/MathTest.php b/api/tests/src/Unit/includes/MathTest.php
+index b38a2d35a2b37dcae8710c1d92ec3a62b7ad15b9..6f2d02065fa626345249ede7185b74439283752e 100644
+--- a/api/tests/src/Unit/includes/MathTest.php
++++ b/api/tests/src/Unit/includes/MathTest.php
+@@ -37,7 +37,7 @@ class MathTest extends TestCase {
+   /**
+    * Data provider for $this->testSequential().
+    */
+-  public function providerTestSequential() {
++  public static function providerTestSequential() {
+     return [
+       [0, 3, 'a', 0],
+       [0, 3, 'a', 0],
+diff --git a/api/tests/src/Unit/includes/RealisticDummyContentTermReferenceFieldTest.php b/api/tests/src/Unit/includes/RealisticDummyContentTermReferenceFieldTest.php
+index fabaceb84c19e85c9536bc2927d4da6bc9ab7fb6..899f167411d21616e1f44eb49883ca86d72a4d58 100644
+--- a/api/tests/src/Unit/includes/RealisticDummyContentTermReferenceFieldTest.php
++++ b/api/tests/src/Unit/includes/RealisticDummyContentTermReferenceFieldTest.php
+@@ -53,18 +53,7 @@ class RealisticDummyContentTermReferenceFieldTest extends TestCase {
+    */
+   public function testGetTid(string $message, array $vocabularies, array $field_info, bool $expect_exception, string $name, $expected) {
+ 
+-    $object = $this->getMockBuilder(RealisticDummyContentTermReferenceField::class)
+-      ->setMethods([
+-        'getAllVocabularies',
+-        'fieldInfoField',
+-        'vocabularyMachineName',
+-        'taxonomyLoadTree',
+-        'termId',
+-        'termName',
+-        'newVocabularyTerm',
+-      ])
+-      ->disableOriginalConstructor()
+-      ->getMock();
++    $object = $this->createMock(RealisticDummyContentTermReferenceField::class);
+     $object->method('getAllVocabularies')
+       ->willReturn($vocabularies);
+     $object->method('newVocabularyTerm')
+@@ -95,7 +84,7 @@ class RealisticDummyContentTermReferenceFieldTest extends TestCase {
+   /**
+    * Provider for testGetTid().
+    */
+-  public function providerGetTid() {
++  public static function providerGetTid() {
+     return [
+       [
+         'message' => 'Exception if no vocabulary.',
+diff --git a/api/tests/src/Unit/includes/RealisticDummyContentValueFieldTest.php b/api/tests/src/Unit/includes/RealisticDummyContentValueFieldTest.php
+index 3b3a08b2fc2798776f2e036aa97eddda4fb115ce..de7721f49e703824eb2b2282113251268ea39040 100644
+--- a/api/tests/src/Unit/includes/RealisticDummyContentValueFieldTest.php
++++ b/api/tests/src/Unit/includes/RealisticDummyContentValueFieldTest.php
+@@ -16,11 +16,7 @@ class RealisticDummyContentValueFieldTest extends TestCase {
+    * Smoke test.
+    */
+   public function testSmoke() {
+-    $object = $this->getMockBuilder(RealisticDummyContentValueField::class)
+-      // NULL = no methods are mocked; otherwise list the methods here.
+-      ->setMethods(NULL)
+-      ->disableOriginalConstructor()
+-      ->getMock();
++    $object = $this->createMock(RealisticDummyContentValueField::class);
+ 
+     $this->assertTrue(is_object($object));
+   }

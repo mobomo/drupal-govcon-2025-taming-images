@@ -1,0 +1,34 @@
+uuid: 569a350d-6eab-4b24-a96d-64d1ab36e1e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_banner
+  module:
+    - node
+    - views
+  theme:
+    - mobomo
+id: mobomo_views_block__hero_banner_block_hero_banner
+theme: mobomo
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:hero_banner-block_hero_banner'
+settings:
+  id: 'views_block:hero_banner-block_hero_banner'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      page: page

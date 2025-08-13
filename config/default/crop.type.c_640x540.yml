@@ -1,0 +1,12 @@
+uuid: fbbe2e36-48da-4f7d-9d30-87a0cd0e270e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Responsive Banner (640x540)'
+id: c_640x540
+description: 'Manual crop for responsive banners.'
+aspect_ratio: '640:540'
+soft_limit_width: 640
+soft_limit_height: 540
+hard_limit_width: 320
+hard_limit_height: 270

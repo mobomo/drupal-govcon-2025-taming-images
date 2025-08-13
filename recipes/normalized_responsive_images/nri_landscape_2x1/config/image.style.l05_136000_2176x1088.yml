@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l05_136000_2176x1088
+label: 'NIS Landscape 2:1 - size 136 (2176x1088)'
+effects:
+  94c589dd-b81c-4d94-89b0-d47b0da0c79d:
+    uuid: 94c589dd-b81c-4d94-89b0-d47b0da0c79d
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2176
+      height: 1088
+      crop_type: focal_point
+  d7c29439-add9-4712-83d2-9da4092d13e8:
+    uuid: d7c29439-add9-4712-83d2-9da4092d13e8
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 45

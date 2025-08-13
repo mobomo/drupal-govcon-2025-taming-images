@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l06_016000_256x135
+label: 'NIS Landscape DCI - size 16 (256x135)'
+effects:
+  4229c31c-8cdf-4f34-8217-b28dd5f2fa2c:
+    uuid: 4229c31c-8cdf-4f34-8217-b28dd5f2fa2c
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 256
+      height: 135
+      crop_type: focal_point
+  a0aaac9b-6f9e-4d53-b703-0ba410b54eae:
+    uuid: a0aaac9b-6f9e-4d53-b703-0ba410b54eae
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

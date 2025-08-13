@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l05_008000_128x64
+label: 'NIS Landscape 2:1 - size 8 (128x64)'
+effects:
+  aeb85782-9ddd-4db9-8b8b-20fcd49c358a:
+    uuid: aeb85782-9ddd-4db9-8b8b-20fcd49c358a
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 128
+      height: 64
+      crop_type: focal_point
+  c2dbf929-7c82-4aff-85b7-124bbc5acdaf:
+    uuid: c2dbf929-7c82-4aff-85b7-124bbc5acdaf
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

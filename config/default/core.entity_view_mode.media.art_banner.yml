@@ -1,0 +1,11 @@
+uuid: c5fa30f1-af52-4834-9478-ad23c4d3bff5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.art_banner
+label: 'Art Banner - eager'
+description: null
+targetEntityType: media
+cache: true

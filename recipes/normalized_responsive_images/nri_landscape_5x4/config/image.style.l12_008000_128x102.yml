@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l12_008000_128x102
+label: 'NIS Landscape 5:4 - size 8 (128x102)'
+effects:
+  e9b14522-8c6f-48cb-8aa0-475a892b5a50:
+    uuid: e9b14522-8c6f-48cb-8aa0-475a892b5a50
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 128
+      height: 102
+      crop_type: focal_point
+  54da7b80-dd80-48ff-a32c-44d11b926d6a:
+    uuid: 54da7b80-dd80-48ff-a32c-44d11b926d6a
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

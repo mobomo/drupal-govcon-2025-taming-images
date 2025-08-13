@@ -1,0 +1,69 @@
+uuid: c29a5daa-896c-4dfb-b77b-235a52200f0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_term_media_folder
+    - field.field.media.image.schema_content_size
+    - field.field.media.image.schema_encoding_format
+    - field.field.media.image.schema_height
+    - field.field.media.image.schema_width
+    - image.style.media_library
+    - media.type.image
+  module:
+    - image_widget_crop
+_core:
+  default_config_hash: BMLrK4zKp8-FFnMseBdT_6h6YipUsKRfbDf_3WUB5HA
+id: media.image.media_library
+targetEntityType: media
+bundle: image
+mode: media_library
+content:
+  field_media_image:
+    type: image_widget_crop
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: media_library
+      crop_preview_image_style: max_1300x1300
+      crop_list:
+        - focal_point
+        - l01_landscape_32_9
+        - l08_landscape_16_9
+        - p06_portrait_1_2
+      crop_types_required:
+        - focal_point
+      warn_multiple_usages: true
+      show_crop_area: true
+      show_default_crop: true
+    third_party_settings: {  }
+  field_term_media_folder:
+    type: entity_reference_autocomplete_tags
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Start typing to see similar terms'
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  schema_content_size: true
+  schema_encoding_format: true
+  schema_height: true
+  schema_width: true
+  status: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: 90133f8f-3763-4ca9-9fe1-2d5dfe431878
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.schema_encoding_format
+    - media.type.vector_image
+id: media.vector_image.schema_encoding_format
+field_name: schema_encoding_format
+entity_type: media
+bundle: vector_image
+label: 'Encoding format'
+description: 'Media type typically expressed using a MIME format (see <a href="http://www.iana.org/assignments/media-types/media-types.xhtml">IANA site</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">MDN reference</a>), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

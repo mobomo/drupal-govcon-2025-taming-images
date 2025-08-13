@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: sq_240000_3840x3840
+label: 'NIS Square 1:1 - size 240 (3840x3840)'
+effects:
+  ca64ed6b-d6db-429a-a046-c866d5d34173:
+    uuid: ca64ed6b-d6db-429a-a046-c866d5d34173
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3840
+      height: 3840
+      crop_type: focal_point
+  cd21a25b-45ce-4800-a7ed-a1a38500144a:
+    uuid: cd21a25b-45ce-4800-a7ed-a1a38500144a
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 25

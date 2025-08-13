@@ -1,0 +1,25 @@
+uuid: 20ad87a5-b4d3-4702-9ecd-c8b60599a024
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hummingbird
+_core:
+  default_config_hash: '-OAAZDw1OR_UyAEPEKX0Hu4LaZD149vW9PmMnIC-v0o'
+id: hummingbird_site_branding
+theme: hummingbird
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

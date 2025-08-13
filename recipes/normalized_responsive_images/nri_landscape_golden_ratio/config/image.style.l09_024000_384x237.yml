@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l09_024000_384x237
+label: 'NIS Landscape Golden Ratio - size 24 (384x237)'
+effects:
+  13fa1de2-72d9-4d6b-ba84-d4ab9bb3b34b:
+    uuid: 13fa1de2-72d9-4d6b-ba84-d4ab9bb3b34b
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 384
+      height: 237
+      crop_type: focal_point
+  e7003840-6e95-4453-9e7a-ae2da19f6b4b:
+    uuid: e7003840-6e95-4453-9e7a-ae2da19f6b4b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p03_016000_256x384
+label: 'NIS Portrait 2:3 - size 16 (256x384)'
+effects:
+  72cd7d99-584d-4f3f-ab75-f135230f449e:
+    uuid: 72cd7d99-584d-4f3f-ab75-f135230f449e
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 256
+      height: 384
+      crop_type: focal_point
+  7ddc45ea-b0d9-4535-906d-ba586d987827:
+    uuid: 7ddc45ea-b0d9-4535-906d-ba586d987827
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

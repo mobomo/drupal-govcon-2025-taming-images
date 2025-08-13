@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.l09_008000_128x79
+    - image.style.l09_016000_256x158
+    - image.style.l09_024000_384x237
+    - image.style.l09_032000_512x316
+    - image.style.l09_040000_640x396
+    - image.style.l09_048000_768x475
+    - image.style.l09_056000_896x554
+    - image.style.l09_064000_1024x633
+    - image.style.l09_072000_1152x712
+    - image.style.l09_088000_1408x870
+    - image.style.l09_104000_1664x1028
+    - image.style.l09_120000_1920x1187
+    - image.style.l09_136000_2176x1345
+    - image.style.l09_160000_2560x1582
+    - image.style.l09_184000_2944x1819
+    - image.style.l09_208000_3328x2057
+    - image.style.l09_240000_3840x2373
+id: landscape_golden_ratio
+label: 'Landscape Golden Ratio'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - l09_008000_128x79
+        - l09_016000_256x158
+        - l09_024000_384x237
+        - l09_032000_512x316
+        - l09_040000_640x396
+        - l09_048000_768x475
+        - l09_056000_896x554
+        - l09_064000_1024x633
+        - l09_072000_1152x712
+        - l09_088000_1408x870
+        - l09_104000_1664x1028
+        - l09_120000_1920x1187
+        - l09_136000_2176x1345
+        - l09_160000_2560x1582
+        - l09_184000_2944x1819
+        - l09_208000_3328x2057
+        - l09_240000_3840x2373
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: l09_064000_1024x633

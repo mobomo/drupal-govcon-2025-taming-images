@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p05_208000_3328x5916
+label: 'NIS Portrait 9:16 - size 208 (3328x5916)'
+effects:
+  976fa81f-6cc5-4b37-9b0b-2eab8834c092:
+    uuid: 976fa81f-6cc5-4b37-9b0b-2eab8834c092
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3328
+      height: 5916
+      crop_type: focal_point
+  94ef4555-2874-4357-9a87-cddfebf8bd5c:
+    uuid: 94ef4555-2874-4357-9a87-cddfebf8bd5c
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 30

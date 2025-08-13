@@ -1,0 +1,20 @@
+uuid: d1ce9b67-af2b-4ce0-89ec-017c181321b6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mobomo
+_core:
+  default_config_hash: 1SAV3K8gmPzsKLWSULRghHok6w1VrvR5aN0_UPRJoN0
+id: mobomo_local_actions
+theme: mobomo
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

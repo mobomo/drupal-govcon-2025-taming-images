@@ -1,0 +1,22 @@
+uuid: 8cbbe47d-1169-441f-ae83-c03d7c80a2e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: KqnXKGxAftj8rd52ZZP42BfQsrm3-OtFMZ5e4NtMKqc
+id: mobomo_content
+theme: mobomo
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

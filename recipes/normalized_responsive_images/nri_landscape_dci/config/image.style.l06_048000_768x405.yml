@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l06_048000_768x405
+label: 'NIS Landscape DCI - size 48 (768x405)'
+effects:
+  c7df32f3-7267-4a28-ba22-3b3200c5b0cf:
+    uuid: c7df32f3-7267-4a28-ba22-3b3200c5b0cf
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 768
+      height: 405
+      crop_type: focal_point
+  4aade1a8-6c14-4aed-b534-0f34448761e6:
+    uuid: 4aade1a8-6c14-4aed-b534-0f34448761e6
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

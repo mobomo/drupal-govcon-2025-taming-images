@@ -1,0 +1,19 @@
+uuid: 226c0772-3afc-46f1-b1f8-8559f77f52d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.schema_width
+    - media.type.image
+id: media.image.schema_width
+field_name: schema_width
+entity_type: media
+bundle: image
+label: Width
+description: 'The width of the item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

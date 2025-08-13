@@ -1,0 +1,53 @@
+uuid: 9d4bdd95-06b4-4513-b8ea-8a3935a1039c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.vector_image.field_media_svg
+    - field.field.media.vector_image.field_term_media_folder
+    - field.field.media.vector_image.schema_content_size
+    - field.field.media.vector_image.schema_encoding_format
+    - media.type.vector_image
+  module:
+    - svg_image_field
+_core:
+  default_config_hash: ce4rH4w-xKsqIZQtK__WtOZ--1oRsPJfb1pRXO2nZ8A
+id: media.vector_image.default
+targetEntityType: media
+bundle: vector_image
+mode: default
+content:
+  field_media_svg:
+    type: svg_image_field_widget
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_max_width: 300
+      preview_image_max_height: 300
+    third_party_settings: {  }
+  field_term_media_folder:
+    type: entity_reference_autocomplete_tags
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Start typing to see similar terms'
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  schema_content_size: true
+  schema_encoding_format: true
+  status: true
+  uid: true

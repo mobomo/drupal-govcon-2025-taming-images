@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p05_032000_512x910
+label: 'NIS Portrait 9:16 - size 32 (512x910)'
+effects:
+  eda2451a-49f5-4d86-b577-841cc2d8ad3a:
+    uuid: eda2451a-49f5-4d86-b577-841cc2d8ad3a
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 512
+      height: 910
+      crop_type: focal_point
+  a730d5cb-1220-4cdd-82d4-2c483f71ab56:
+    uuid: a730d5cb-1220-4cdd-82d4-2c483f71ab56
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

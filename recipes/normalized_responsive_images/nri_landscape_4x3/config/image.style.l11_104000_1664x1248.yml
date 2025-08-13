@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l11_104000_1664x1248
+label: 'NIS Landscape 4:3 - size 104 (1664x1248)'
+effects:
+  09058af0-1fed-4385-8baa-373a2154090f:
+    uuid: 09058af0-1fed-4385-8baa-373a2154090f
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1664
+      height: 1248
+      crop_type: focal_point
+  fadf5bf2-d518-48ab-8bf8-222a3411f46c:
+    uuid: fadf5bf2-d518-48ab-8bf8-222a3411f46c
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

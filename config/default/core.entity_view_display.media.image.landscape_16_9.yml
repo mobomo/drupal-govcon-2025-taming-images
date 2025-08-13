@@ -1,0 +1,48 @@
+uuid: 90247d83-da42-4cff-93f7-4635bb1cd25a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.landscape_16_9
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_term_media_folder
+    - field.field.media.image.schema_content_size
+    - field.field.media.image.schema_encoding_format
+    - field.field.media.image.schema_height
+    - field.field.media.image.schema_width
+    - media.type.image
+    - responsive_image.styles.landscape_16_9
+  module:
+    - responsive_image
+_core:
+  default_config_hash: eWwYeyMA3AUS6scCDdPG2VapQN80TEIgBmWEvP_dTCA
+id: media.image.landscape_16_9
+targetEntityType: media
+bundle: image
+mode: landscape_16_9
+content:
+  field_media_image:
+    type: responsive_image
+    label: visually_hidden
+    settings:
+      responsive_image_style: landscape_16_9
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_image_file_size: true
+  field_media_image_height: true
+  field_media_image_mime_type: true
+  field_media_image_width: true
+  field_term_media_folder: true
+  name: true
+  schema_content_size: true
+  schema_encoding_format: true
+  schema_height: true
+  schema_width: true
+  thumbnail: true
+  uid: true

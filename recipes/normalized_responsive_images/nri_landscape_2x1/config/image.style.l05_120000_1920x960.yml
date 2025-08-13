@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l05_120000_1920x960
+label: 'NIS Landscape 2:1 - size 120 (1920x960)'
+effects:
+  6dc5c33c-ede8-4b86-8111-6538c335e137:
+    uuid: 6dc5c33c-ede8-4b86-8111-6538c335e137
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 960
+      crop_type: focal_point
+  ec735b2d-b7f3-434d-bddd-a50b577e0c6a:
+    uuid: ec735b2d-b7f3-434d-bddd-a50b577e0c6a
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

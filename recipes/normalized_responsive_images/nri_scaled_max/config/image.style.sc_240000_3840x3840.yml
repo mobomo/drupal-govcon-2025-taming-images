@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_240000_3840x3840
+label: 'NIS Scaled Max - size 240 (3840x3840)'
+effects:
+  81d82242-8c8f-474c-ad40-8a8db0f69fad:
+    uuid: 81d82242-8c8f-474c-ad40-8a8db0f69fad
+    id: image_scale
+    weight: 0
+    data:
+      width: 3840
+      height: 3840
+      upscale: true
+  28799832-5f88-418c-ba87-1eb5203dd8bf:
+    uuid: 28799832-5f88-418c-ba87-1eb5203dd8bf
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 25

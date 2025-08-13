@@ -1,0 +1,20 @@
+uuid: 47bb39ad-b2ec-4c5a-9e21-28bb817f535a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hummingbird
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: hummingbird_page_title
+theme: hummingbird
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

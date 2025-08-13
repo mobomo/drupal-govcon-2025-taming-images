@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p05_120000_1920x3413
+label: 'NIS Portrait 9:16 - size 120 (1920x3413)'
+effects:
+  18d05596-8c9d-4b4f-97ee-2659d9f1fcef:
+    uuid: 18d05596-8c9d-4b4f-97ee-2659d9f1fcef
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 3413
+      crop_type: focal_point
+  fed87416-efe4-4073-b6d2-01582b1e7986:
+    uuid: fed87416-efe4-4073-b6d2-01582b1e7986
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

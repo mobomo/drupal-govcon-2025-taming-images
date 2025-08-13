@@ -1,0 +1,35 @@
+uuid: 29c4d81c-c44a-498a-b360-b64ba9219d85
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_effects
+name: mask_frame_512x1024
+label: 'Mask - Frame (512x1024)'
+effects:
+  f50cdc5e-f812-4d15-9678-512ff7d6b492:
+    uuid: f50cdc5e-f812-4d15-9678-512ff7d6b492
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 512
+      height: 1024
+      crop_type: focal_point
+  9a231a2a-8575-41cc-86a1-65bfcc8d19a8:
+    uuid: 9a231a2a-8575-41cc-86a1-65bfcc8d19a8
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+  e04b76e0-1134-4e14-ac4e-319da446f1b5:
+    uuid: e04b76e0-1134-4e14-ac4e-319da446f1b5
+    id: image_effects_mask
+    weight: 3
+    data:
+      mask_image: ../web/masks/MaskFrame.png
+      mask_width: 100%
+      mask_height: 100%
+      placement: left-center
+      x_offset: ''
+      y_offset: ''

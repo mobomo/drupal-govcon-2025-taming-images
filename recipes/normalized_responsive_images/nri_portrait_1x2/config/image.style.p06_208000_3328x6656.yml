@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p06_208000_3328x6656
+label: 'NIS Portrait 1:2 - size 208 (3328x6656)'
+effects:
+  fca597b4-f39a-4987-b3bf-f4b9946ce7cc:
+    uuid: fca597b4-f39a-4987-b3bf-f4b9946ce7cc
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3328
+      height: 6656
+      crop_type: focal_point
+  56ae56f2-b725-44fc-a9ea-7764b146b3c4:
+    uuid: 56ae56f2-b725-44fc-a9ea-7764b146b3c4
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 30

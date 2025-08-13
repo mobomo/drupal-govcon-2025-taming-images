@@ -1,0 +1,26 @@
+uuid: 5ea2d55e-2c20-4d11-a331-aaa5c5bc3e19
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+_core:
+  default_config_hash: voZ1s13G-G0XqYlDUcVm9UsG1CiW7Io-qrxcD33_g_I
+name: p06_240000_3840x7680
+label: 'NIS Portrait 1:2 - size 240 (3840x7680)'
+effects:
+  0e8424d6-a556-45e4-8aa2-8300cbff37b4:
+    uuid: 0e8424d6-a556-45e4-8aa2-8300cbff37b4
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3840
+      height: 7680
+      crop_type: focal_point
+  4d0c5cfc-85db-4533-9377-7aa36b40f53f:
+    uuid: 4d0c5cfc-85db-4533-9377-7aa36b40f53f
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 25

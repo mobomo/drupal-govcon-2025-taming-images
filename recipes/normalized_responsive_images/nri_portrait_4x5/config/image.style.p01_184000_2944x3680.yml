@@ -1,0 +1,24 @@
+uuid: c49a538d-39ce-4dec-bc71-61495e998fca
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p01_184000_2944x3680
+label: 'NIS Portrait 4:5 - size 184 (2944x3680)'
+effects:
+  02d285f0-5ca1-4939-b211-b1f3076ccc74:
+    uuid: 02d285f0-5ca1-4939-b211-b1f3076ccc74
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2944
+      height: 3680
+      crop_type: focal_point
+  e9ecef5d-114c-48a1-8189-d87e88ca48bd:
+    uuid: e9ecef5d-114c-48a1-8189-d87e88ca48bd
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 35

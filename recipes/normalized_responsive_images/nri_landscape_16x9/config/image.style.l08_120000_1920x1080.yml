@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l08_120000_1920x1080
+label: 'NIS Landscape 16:9 - size 120 (1920x1080)'
+effects:
+  2b5e6076-641d-4fa9-a157-13d8456de891:
+    uuid: 2b5e6076-641d-4fa9-a157-13d8456de891
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 1080
+      crop_type: focal_point
+  9b3e61bc-02c1-458c-b68b-73e4cf665957:
+    uuid: 9b3e61bc-02c1-458c-b68b-73e4cf665957
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

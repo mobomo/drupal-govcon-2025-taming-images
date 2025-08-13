@@ -1,0 +1,13 @@
+uuid: 4dfbc9b5-74ba-4d5d-889b-ddc147806cde
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_warmer
+_core:
+  default_config_hash: eipS4ky8do7ge54Ukrp-8ygQUqWoDUPf7LRbafmHg5w
+id: image_style_warmer_warmup_file
+label: 'Warmup image styles of files'
+type: file
+plugin: image_style_warmer_warmup_file
+configuration: {  }

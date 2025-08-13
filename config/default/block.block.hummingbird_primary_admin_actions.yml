@@ -1,0 +1,20 @@
+uuid: 0ffb33fe-ab14-4da8-9535-0c2df9b1a29b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hummingbird
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: hummingbird_primary_admin_actions
+theme: hummingbird
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

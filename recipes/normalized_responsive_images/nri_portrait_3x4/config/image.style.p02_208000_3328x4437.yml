@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p02_208000_3328x4437
+label: 'NIS Portrait 3:4 - size 208 (3328x4437)'
+effects:
+  e6ffbc8d-388e-4c67-a0ea-4f428ca2665e:
+    uuid: e6ffbc8d-388e-4c67-a0ea-4f428ca2665e
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3328
+      height: 4437
+      crop_type: focal_point
+  bd2b5b22-b094-4a22-ab13-79770cfcc5bc:
+    uuid: bd2b5b22-b094-4a22-ab13-79770cfcc5bc
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 30

@@ -1,0 +1,27 @@
+uuid: 4dd4b821-2ee4-4862-b50a-e9218dc2455c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: k1d_HBAqd4E4vL_7SY_Kb26PE8p3b4BNGzy48BDGu1o
+id: mobomo_main_menu
+theme: mobomo
+region: navbar
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

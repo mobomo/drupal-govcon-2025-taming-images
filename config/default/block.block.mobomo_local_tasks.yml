@@ -1,0 +1,22 @@
+uuid: 4bda4a05-a36f-4405-b18e-6a14e5a06949
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mobomo
+_core:
+  default_config_hash: 1HEPMl9WDN8Qf_-_Z9ex5n7OJT-RfCjAMgYPorepHGc
+id: mobomo_local_tasks
+theme: mobomo
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

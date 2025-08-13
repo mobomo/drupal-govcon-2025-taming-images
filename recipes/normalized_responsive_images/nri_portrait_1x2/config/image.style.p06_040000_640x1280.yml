@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p06_040000_640x1280
+label: 'NIS Portrait 1:2 - size 40 (640x1280)'
+effects:
+  b07517d7-71a7-4e32-806f-56a5f509105f:
+    uuid: b07517d7-71a7-4e32-806f-56a5f509105f
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 1280
+      crop_type: focal_point
+  d20ebe43-92d9-47d4-87a9-1664622c46c8:
+    uuid: d20ebe43-92d9-47d4-87a9-1664622c46c8
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

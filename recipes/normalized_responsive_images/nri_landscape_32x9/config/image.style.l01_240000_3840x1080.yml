@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l01_240000_3840x1080
+label: 'NIS Landscape 32:9 - size 240 (3840x1080)'
+effects:
+  cbba263c-2bca-48d9-8dc1-1bfeffae9188:
+    uuid: cbba263c-2bca-48d9-8dc1-1bfeffae9188
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3840
+      height: 1080
+      crop_type: focal_point
+  df25334a-4785-4e0f-8f66-07f0807276fe:
+    uuid: df25334a-4785-4e0f-8f66-07f0807276fe
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 25

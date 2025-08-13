@@ -1,0 +1,24 @@
+uuid: 11bc0bba-317a-4c82-b20f-13f5765f7fd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l02_120000_1920x640
+label: 'NIS Landscape 3:1 - size 120 (1920x640)'
+effects:
+  d36bc254-2d64-4645-8521-8a1266b5bfb2:
+    uuid: d36bc254-2d64-4645-8521-8a1266b5bfb2
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 640
+      crop_type: focal_point
+  5dd4ed2d-4c2d-4ce8-abd7-86d4f9f54478:
+    uuid: 5dd4ed2d-4c2d-4ce8-abd7-86d4f9f54478
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

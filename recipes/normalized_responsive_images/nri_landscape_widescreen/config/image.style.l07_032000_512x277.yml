@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l07_032000_512x277
+label: 'NIS Landscape Widescreen - size 32 (512x277)'
+effects:
+  12de5cea-25b4-4a67-a26b-b13e1da17122:
+    uuid: 12de5cea-25b4-4a67-a26b-b13e1da17122
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 512
+      height: 277
+      crop_type: focal_point
+  2d117d29-2e75-445d-8454-33ab98807c4f:
+    uuid: 2d117d29-2e75-445d-8454-33ab98807c4f
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

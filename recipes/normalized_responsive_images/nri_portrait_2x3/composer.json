@@ -1,0 +1,20 @@
+{
+  "name": "drupal_recipe/nri_portrait_2x3",
+  "description": "A recipe tailored to best practices for displaying aspect ratio based responsive images using custom image view modes.",
+  "type": "drupal-recipe",
+  "version": "dev-master",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+      {
+        "name": "Perry Brown (UpTil4Music)",
+        "homepage": "https://www.drupal.org/u/UpTil4Music",
+        "role": "Maintainer"
+      }
+    ],
+  "require": {
+    "drupal/core-recommended": "~10",
+    "drupal/focal_point": "^2.0",
+    "drupal/image_style_quality": "^1.6",
+    "drupal_recipe/normalized_responsive_images": "*"
+  }
+}

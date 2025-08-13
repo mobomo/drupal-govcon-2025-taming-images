@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portrait_1_2
+label: 'P 1:2'
+description: ''
+targetEntityType: media
+cache: true

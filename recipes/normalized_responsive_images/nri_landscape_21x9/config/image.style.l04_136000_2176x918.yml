@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l04_136000_2176x918
+label: 'NIS Landscape 21:9 - size 136 (2176x918)'
+effects:
+  5282a3f8-b976-494c-8991-562cffbc426e:
+    uuid: 5282a3f8-b976-494c-8991-562cffbc426e
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2176
+      height: 918
+      crop_type: focal_point
+  740744b8-2eab-4775-bbac-2055ee8c3090:
+    uuid: 740744b8-2eab-4775-bbac-2055ee8c3090
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 45

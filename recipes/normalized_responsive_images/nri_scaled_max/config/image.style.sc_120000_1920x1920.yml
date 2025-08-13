@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_120000_1920x1920
+label: 'NIS Scaled Max - size 120 (1920x1920)'
+effects:
+  552a9f75-786f-4bbd-92b8-02d965db8cd4:
+    uuid: 552a9f75-786f-4bbd-92b8-02d965db8cd4
+    id: image_scale
+    weight: 0
+    data:
+      width: 1920
+      height: 1920
+      upscale: true
+  7e07ce14-ad81-426e-b9a7-0fb9aff3b878:
+    uuid: 7e07ce14-ad81-426e-b9a7-0fb9aff3b878
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

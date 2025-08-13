@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p02_120000_1920x2560
+label: 'NIS Portrait 3:4 - size 120 (1920x2560)'
+effects:
+  4b6bc4ba-a3f4-427f-990f-54ff2c62bc33:
+    uuid: 4b6bc4ba-a3f4-427f-990f-54ff2c62bc33
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 2560
+      crop_type: focal_point
+  c9aabb3c-9588-4b9d-87bb-06138deea11b:
+    uuid: c9aabb3c-9588-4b9d-87bb-06138deea11b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

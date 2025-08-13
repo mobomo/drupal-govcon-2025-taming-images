@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l07_064000_1024x554
+label: 'NIS Landscape Widescreen - size 64 (1024x554)'
+effects:
+  0283c209-2f27-4a27-888e-3a9c211d640e:
+    uuid: 0283c209-2f27-4a27-888e-3a9c211d640e
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1024
+      height: 554
+      crop_type: focal_point
+  e15d2d08-cd50-4c9c-b2c9-05338abf6a11:
+    uuid: e15d2d08-cd50-4c9c-b2c9-05338abf6a11
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

@@ -1,0 +1,22 @@
+uuid: d22d928f-c823-4ad1-900b-8252e444d454
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: _IPvsbtr6orcrLfTkxgC0PWdW20QobWsIPlS_zLH6RQ
+id: mobomo_powered
+theme: mobomo
+region: footer
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

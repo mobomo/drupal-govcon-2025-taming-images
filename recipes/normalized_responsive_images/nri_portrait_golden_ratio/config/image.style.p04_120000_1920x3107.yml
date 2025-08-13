@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p04_120000_1920x3107
+label: 'NIS Portrait Golden Ratio - size 120 (1920x3107)'
+effects:
+  1f3f515e-4967-4377-8809-ee7c37f18e9d:
+    uuid: 1f3f515e-4967-4377-8809-ee7c37f18e9d
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 3107
+      crop_type: focal_point
+  2e3d2be2-eddc-4e9a-904f-89fb3670577f:
+    uuid: 2e3d2be2-eddc-4e9a-904f-89fb3670577f
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

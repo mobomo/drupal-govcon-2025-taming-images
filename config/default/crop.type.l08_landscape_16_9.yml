@@ -1,0 +1,12 @@
+uuid: 4aabd3b7-ae33-4947-a8a3-4785c8b64696
+langcode: en
+status: true
+dependencies: {  }
+label: 'Landscape 16:9'
+id: l08_landscape_16_9
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: 1920
+soft_limit_height: 1080
+hard_limit_width: 768
+hard_limit_height: 432

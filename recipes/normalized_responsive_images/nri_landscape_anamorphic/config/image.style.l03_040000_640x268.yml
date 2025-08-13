@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l03_040000_640x268
+label: 'NIS Landscape Anamorphic - size 40 (640x268)'
+effects:
+  627b534e-066c-4884-85c1-9bb4d5b09af2:
+    uuid: 627b534e-066c-4884-85c1-9bb4d5b09af2
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 268
+      crop_type: focal_point
+  e49c9f72-27b9-4fdb-9575-8a703f980d1b:
+    uuid: e49c9f72-27b9-4fdb-9575-8a703f980d1b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p04_040000_640x1036
+label: 'NIS Portrait Golden Ratio - size 40 (640x1036)'
+effects:
+  5f4b63c9-808e-4eb0-8c15-457580ada19e:
+    uuid: 5f4b63c9-808e-4eb0-8c15-457580ada19e
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 1036
+      crop_type: focal_point
+  1be27338-e38a-42ce-88a6-47889f187ec7:
+    uuid: 1be27338-e38a-42ce-88a6-47889f187ec7
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

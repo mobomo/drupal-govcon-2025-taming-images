@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_064000_1024x1024
+label: 'NIS Scaled Max - size 64 (1024x1024)'
+effects:
+  276adb09-4f0d-42d1-b2e0-0165c187cbe2:
+    uuid: 276adb09-4f0d-42d1-b2e0-0165c187cbe2
+    id: image_scale
+    weight: 0
+    data:
+      width: 1024
+      height: 1024
+      upscale: true
+  a1cd90fe-67f8-42ca-b695-44759f646d68:
+    uuid: a1cd90fe-67f8-42ca-b695-44759f646d68
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

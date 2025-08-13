@@ -1,0 +1,12 @@
+uuid: c6dbca5d-19ec-4827-a29e-131dadabf655
+langcode: en
+status: true
+dependencies: {  }
+label: 'Responsive Banner (1920x540)'
+id: a_1920x540
+description: 'Manual crop for responsive banners.'
+aspect_ratio: '1920:540'
+soft_limit_width: 1920
+soft_limit_height: 540
+hard_limit_width: 960
+hard_limit_height: 270

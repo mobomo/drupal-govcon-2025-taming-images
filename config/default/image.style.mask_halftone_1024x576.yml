@@ -1,0 +1,35 @@
+uuid: 095dba92-2c3c-43cd-b612-c89e7d92d6d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_effects
+name: mask_halftone_1024x576
+label: 'Mask - Halftone (1024x576)'
+effects:
+  b62e3aab-768b-46c2-a76f-b98620993bc1:
+    uuid: b62e3aab-768b-46c2-a76f-b98620993bc1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 576
+      crop_type: focal_point
+  833dc5c1-76ce-4efe-a99a-13926ce827a2:
+    uuid: 833dc5c1-76ce-4efe-a99a-13926ce827a2
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+  6ee06b35-349f-4612-bbf4-450ee68fa5e3:
+    uuid: 6ee06b35-349f-4612-bbf4-450ee68fa5e3
+    id: image_effects_mask
+    weight: 3
+    data:
+      mask_image: ../web/masks/MaskHalftone.png
+      mask_width: 100%
+      mask_height: ''
+      placement: center-center
+      x_offset: ''
+      y_offset: ''

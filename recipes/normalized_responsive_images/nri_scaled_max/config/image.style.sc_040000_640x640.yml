@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: sc_040000_640x640
+label: 'NIS Scaled Max - size 40 (640x640)'
+effects:
+  1646c14e-d818-4c55-9496-1741e3dd6912:
+    uuid: 1646c14e-d818-4c55-9496-1741e3dd6912
+    id: image_scale
+    weight: 0
+    data:
+      width: 640
+      height: 640
+      upscale: true
+  9a954e48-8070-4624-9ef2-462dc3308a02:
+    uuid: 9a954e48-8070-4624-9ef2-462dc3308a02
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

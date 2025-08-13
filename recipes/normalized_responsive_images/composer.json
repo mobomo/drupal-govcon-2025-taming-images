@@ -1,0 +1,18 @@
+{
+    "name": "drupal/normalized_responsive_images",
+    "description": "The Normalized Responsive Images recipe provides several sets of aspect ratio based responsive image styles and corresponding image view modes to display Normalized Image Styles.",
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+          "name": "Perry Brown (UpTil4Music)",
+          "homepage": "https://www.drupal.org/u/UpTil4Music",
+          "role": "Maintainer"
+        }
+      ],
+    "require": {
+        "drupal/core-recommended": "^10.3 || ~11",
+        "drupal/focal_point": "^2.1",
+        "drupal/image_style_quality": "^1.7"
+        }
+}

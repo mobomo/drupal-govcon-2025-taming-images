@@ -1,0 +1,25 @@
+uuid: f1f617e0-f051-46e7-bc61-58ffc26c642b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.vector_image.field_media_svg
+    - field.field.media.vector_image.schema_content_size
+    - field.field.media.vector_image.schema_encoding_format
+    - media.type.vector_image
+  module:
+    - media
+id: media.vector_image
+target_entity_type_id: media
+target_bundle: vector_image
+schema_type: ImageObject
+schema_properties:
+  schema_content_size: contentSize
+  created: dateCreated
+  changed: dateModified
+  schema_encoding_format: encodingFormat
+  field_media_svg: image
+  langcode: inLanguage
+  name: name
+  thumbnail: thumbnail
+additional_mappings: {  }

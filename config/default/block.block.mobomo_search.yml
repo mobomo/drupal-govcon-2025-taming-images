@@ -1,0 +1,23 @@
+uuid: 786d5a7d-4ccd-44ef-af79-f8ebfb29a045
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - mobomo
+_core:
+  default_config_hash: TiIJvc5iuC0tkrmYCXHr3yBnRauN7uiLM6MkEJG3fgA
+id: mobomo_search
+theme: mobomo
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

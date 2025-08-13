@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l03_032000_512x215
+label: 'NIS Landscape Anamorphic - size 32 (512x215)'
+effects:
+  d43dafb4-ff98-413a-bcc5-ea9cf3db614b:
+    uuid: d43dafb4-ff98-413a-bcc5-ea9cf3db614b
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 512
+      height: 215
+      crop_type: focal_point
+  c422afec-4f26-4ca8-a12f-50a12a5c4b64:
+    uuid: c422afec-4f26-4ca8-a12f-50a12a5c4b64
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

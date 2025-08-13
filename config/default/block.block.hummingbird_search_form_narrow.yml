@@ -1,0 +1,23 @@
+uuid: 81dd2950-6e0b-49bb-ac63-ac564c12402e
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - hummingbird
+_core:
+  default_config_hash: _nZjxxdypO6xrOAJkCYD81v0L7wh2zbCAVO7_C-UKIc
+id: hummingbird_search_form_narrow
+theme: hummingbird
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

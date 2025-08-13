@@ -1,0 +1,13 @@
+uuid: 1e9a2da2-e8cb-4464-9927-394c5c14cceb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: gtDFZZ8jw16NzqXnaoyF5rbzeTA2Hno5F1ny-S676Bw
+id: media.portrait_1_2
+label: 'P 1:2'
+description: ''
+targetEntityType: media
+cache: true

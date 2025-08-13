@@ -1,0 +1,20 @@
+uuid: 28416eff-07fb-4dd3-b4c4-b7f036f55dc7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mobomo
+_core:
+  default_config_hash: 1xgv4OVJTQ54t0kNYp5z0OmcpZ7T-aMhqpVmneC73J8
+id: mobomo_page_title
+theme: mobomo
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

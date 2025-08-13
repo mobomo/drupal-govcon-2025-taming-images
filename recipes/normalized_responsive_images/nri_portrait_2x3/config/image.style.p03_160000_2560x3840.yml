@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p03_160000_2560x3840
+label: 'NIS Portrait 2:3 - size 160 (2560x3840)'
+effects:
+  64b9c881-8dc7-4437-bc68-c1efd79cac54:
+    uuid: 64b9c881-8dc7-4437-bc68-c1efd79cac54
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2560
+      height: 3840
+      crop_type: focal_point
+  ba539521-2503-49c3-b3a3-15aa8fb5f88a:
+    uuid: ba539521-2503-49c3-b3a3-15aa8fb5f88a
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 40

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portrait_9_16
+label: 'P 9:16'
+description: ''
+targetEntityType: media
+cache: true

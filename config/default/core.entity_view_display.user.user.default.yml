@@ -1,0 +1,36 @@
+uuid: f64d2606-d6d1-4d48-981d-f036a3fb9f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_media_image
+    - field.field.user.user.user_picture
+    - image.style.mask_hexagon_1024x1024
+  module:
+    - media
+    - user
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: mask_hexagon_1024x1024
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  user_picture: true

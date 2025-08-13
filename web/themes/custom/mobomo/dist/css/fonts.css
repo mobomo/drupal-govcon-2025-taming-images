@@ -1,0 +1,147 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/fonts.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:300,400,500,700&display=swap);
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./scss/fonts.scss (1) ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+/*
+
+// Colors
+
+$color-bg-highlighted: darken($color-bg-body, 12);
+$color-bg-hover: rgba(#000, 0.04);
+$color-border: darken($color-bg-body, 20);
+
+$color-link: darken($theme-secondary, 10);
+$color-text-secondary: rgba($color-text-base, .60);
+$color-text-disabled: rgba($color-text-base, .38);
+
+$color-text-light-base: #FFF;
+$color-text-light: $color-text-light-base;
+
+$color-on-primary: $color-text-light;
+$color-on-secondary: $color-text-light;
+
+$color-text-placeholer: rgba($color-text-base, .6);
+
+// Fonts & typography
+
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$font-size-h1: 6rem;
+$line-height-h1: 6rem;
+$font-weight-h1: 300;
+
+$font-size-h2: 3.75rem;
+$line-height-h2: 3.75rem;
+$font-weight-h2: 300;
+
+$font-size-h3: 3rem;
+$line-height-h3: 3.125rem;
+$font-weight-h3: 400;
+
+$font-size-h4: 2.125rem;
+$line-height-h4: 2.5rem;
+$font-weight-h4: 400;
+
+$font-size-h5: 1.5rem;
+$line-height-h5: 2rem;
+$font-weight-h5: 400;
+
+$font-size-h6: 1.25rem;
+$line-height-h6: 2rem;
+$font-weight-h6: 500;
+
+$font-size-st1: 1rem;
+$line-height-st1: 1.75rem;
+$font-weight-st1: 400;
+
+$font-size-st2: .875rem;
+$line-height-st2: 1.375rem;
+$font-weight-st2: 500;
+
+// body 
+$font-size-text: 1rem;
+$line-height-text: 1.5rem;
+$font-weight-text: 400;
+
+$font-size-text-small: .875rem;
+$line-height-text-small: 1.25rem;
+$font-weight-text-small: 400;
+
+$font-size-caption: .75rem;
+$line-height-caption: 1.25rem;
+$font-weight-caption: 400;
+
+$font-size-button: .875rem;
+$line-height-button: 2.25rem;
+$font-weight-button: 500;
+
+$font-size-overline: .75rem;
+$line-height-overline: 2rem;
+$font-weight-overline: 500;
+
+// Spacing
+
+$spacing: 8px;
+$gutter: $spacing * 2;
+
+// Breakpoints (Bootstrap 3 flavour)
+
+$ss: 360px;
+$ms: 480px;
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1520px;
+*/
+/*
+// Flexbox Grid http://flexboxgrid.com/
+// used as Flexbox Grid Sass https://github.com/hugeinc/flexboxgrid-sass
+
+// Master namespace
+$flexboxgrid-grid-columns: 12;
+$flexboxgrid-gutter-width: $gutter;
+$flexboxgrid-outer-margin: $gutter;
+$flexboxgrid-breakpoints:
+  sm $sm auto,
+  md $md auto,
+  lg $lg $lg;
+$flexboxgrid-max-width: $lg;
+
+// 8.0.5 namespace
+$grid-columns: $flexboxgrid-grid-columns;
+$gutter-width: $flexboxgrid-gutter-width;
+$outer-margin: $flexboxgrid-outer-margin;
+$breakpoints: $flexboxgrid-breakpoints;
+*/
+/*
+@font-face {
+  font-family: 'FONTNAME';
+  src: url('../fonts/FONTNAME-bold.woff2') format('woff2'),
+       url('../fonts/FONTNAME-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FONTNAME';
+  src: url('../fonts/FONTNAME-medium.woff2') format('woff2'),
+       url('../fonts/FONTNAME-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FONTNAME';
+  src: url('../fonts/FONTNAME-regular.woff2') format('woff2'),
+       url('../fonts/FONTNAME-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+/*# sourceMappingURL=fonts.css.map*/

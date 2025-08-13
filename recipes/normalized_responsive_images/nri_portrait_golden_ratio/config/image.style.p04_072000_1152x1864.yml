@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p04_072000_1152x1864
+label: 'NIS Portrait Golden Ratio - size 72 (1152x1864)'
+effects:
+  4f3bdfe0-d4fa-4dc7-bb9d-ee1585ed8378:
+    uuid: 4f3bdfe0-d4fa-4dc7-bb9d-ee1585ed8378
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1152
+      height: 1864
+      crop_type: focal_point
+  6db37646-de06-4901-a9c7-de6c3f4112ee:
+    uuid: 6db37646-de06-4901-a9c7-de6c3f4112ee
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

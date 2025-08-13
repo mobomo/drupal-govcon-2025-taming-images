@@ -1,0 +1,26 @@
+uuid: cb335e29-1ab3-459a-bdea-71fb3ef877f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.l08_landscape_16_9
+  module:
+    - crop
+name: al08_040000_640x360
+label: 'ART Landscape 16:9 - size 40 (640x360)'
+effects:
+  a51e87fd-e68a-451f-99f4-babcc7f4cd84:
+    uuid: a51e87fd-e68a-451f-99f4-babcc7f4cd84
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: l08_landscape_16_9
+      automatic_crop_provider: null
+  e886c680-5e69-4dd0-96ce-c8efdc01428d:
+    uuid: e886c680-5e69-4dd0-96ce-c8efdc01428d
+    id: image_scale
+    weight: 2
+    data:
+      width: 640
+      height: null
+      upscale: true

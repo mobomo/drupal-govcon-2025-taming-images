@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.l01_008000_128x36
+    - image.style.l01_016000_256x72
+    - image.style.l01_024000_384x108
+    - image.style.l01_032000_512x144
+    - image.style.l01_040000_640x180
+    - image.style.l01_048000_768x216
+    - image.style.l01_056000_896x252
+    - image.style.l01_064000_1024x288
+    - image.style.l01_072000_1152x324
+    - image.style.l01_088000_1408x396
+    - image.style.l01_104000_1664x468
+    - image.style.l01_120000_1920x540
+    - image.style.l01_136000_2176x612
+    - image.style.l01_160000_2560x720
+    - image.style.l01_184000_2944x828
+    - image.style.l01_208000_3328x936
+    - image.style.l01_240000_3840x1080
+id: landscape_32_9
+label: 'Landscape 32:9'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - l01_008000_128x36
+        - l01_016000_256x72
+        - l01_024000_384x108
+        - l01_032000_512x144
+        - l01_040000_640x180
+        - l01_048000_768x216
+        - l01_056000_896x252
+        - l01_064000_1024x288
+        - l01_072000_1152x324
+        - l01_088000_1408x396
+        - l01_104000_1664x468
+        - l01_120000_1920x540
+        - l01_136000_2176x612
+        - l01_160000_2560x720
+        - l01_184000_2944x828
+        - l01_208000_3328x936
+        - l01_240000_3840x1080
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: l01_064000_1024x288

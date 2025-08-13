@@ -1,0 +1,26 @@
+uuid: e33af743-108a-40b2-a4d3-eb5db5256239
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+_core:
+  default_config_hash: OGb3Pe2HET4w_62d2AWspVf8jFHmLISuymHGZQBe-n8
+name: l08_136000_2176x1224
+label: 'NIS Landscape 16:9 - size 136 (2176x1224)'
+effects:
+  0d4ec1ec-8aa4-46b2-bada-9da7f6f7b8d2:
+    uuid: 0d4ec1ec-8aa4-46b2-bada-9da7f6f7b8d2
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 2176
+      height: 1224
+      crop_type: focal_point
+  d7b39f98-9852-4e6a-a0e6-20be35bf702b:
+    uuid: d7b39f98-9852-4e6a-a0e6-20be35bf702b
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 45

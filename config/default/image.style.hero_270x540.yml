@@ -1,0 +1,26 @@
+uuid: 41af0e58-ef1d-4a76-95de-8ecd7c4f32aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.p06_portrait_1_2
+  module:
+    - crop
+name: hero_270x540
+label: 'Hero (270x540)'
+effects:
+  a29089cd-92cf-4d3b-9d96-199c9ba3e2a1:
+    uuid: a29089cd-92cf-4d3b-9d96-199c9ba3e2a1
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: p06_portrait_1_2
+      automatic_crop_provider: null
+  c760da82-cb4b-4d52-8204-484ab8f99929:
+    uuid: c760da82-cb4b-4d52-8204-484ab8f99929
+    id: image_scale
+    weight: 2
+    data:
+      width: 270
+      height: null
+      upscale: true

@@ -1,0 +1,25 @@
+uuid: f7d6a04d-33fc-47e3-b16a-0b752ec126f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+_core:
+  default_config_hash: RJTJ9_uL6aBSYOfqgwLds4h9HuTxja18DOEpntDpRV8
+name: sc_032000_512x512
+label: 'NIS Scaled Max - size 32 (512x512)'
+effects:
+  fa567193-c081-4540-abfe-d343b916e844:
+    uuid: fa567193-c081-4540-abfe-d343b916e844
+    id: image_scale
+    weight: 0
+    data:
+      width: 512
+      height: 512
+      upscale: true
+  ebe7d261-abde-462f-bf52-cd7443faaafc:
+    uuid: ebe7d261-abde-462f-bf52-cd7443faaafc
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

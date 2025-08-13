@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l04_024000_384x162
+label: 'NIS Landscape 21:9 - size 24 (384x162)'
+effects:
+  c1047e89-f371-4117-95b9-2b7f575ba141:
+    uuid: c1047e89-f371-4117-95b9-2b7f575ba141
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 384
+      height: 162
+      crop_type: focal_point
+  88446840-2da6-490e-971a-1e35a4bbd48f:
+    uuid: 88446840-2da6-490e-971a-1e35a4bbd48f
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

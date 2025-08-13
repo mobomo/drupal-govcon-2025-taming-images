@@ -1,0 +1,24 @@
+uuid: 23c2d7a9-4845-44ab-a792-9b0ce6e32ae7
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p01_240000_3840x4800
+label: 'NIS Portrait 4:5 - size 240 (3840x4800)'
+effects:
+  58df22fa-c2c0-4a93-a0a0-f06cc639fe6e:
+    uuid: 58df22fa-c2c0-4a93-a0a0-f06cc639fe6e
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 3840
+      height: 4800
+      crop_type: focal_point
+  39aea22d-7e52-4365-bdaa-955379dfcfae:
+    uuid: 39aea22d-7e52-4365-bdaa-955379dfcfae
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 25

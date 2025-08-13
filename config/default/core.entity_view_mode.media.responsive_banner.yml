@@ -1,0 +1,11 @@
+uuid: 163db03b-70cf-4af2-b12b-5cabdbb5ae8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.responsive_banner
+label: 'Responsive Banner - eager'
+description: null
+targetEntityType: media
+cache: true

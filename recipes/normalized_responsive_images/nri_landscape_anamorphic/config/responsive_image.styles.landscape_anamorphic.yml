@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.l03_008000_128x54
+    - image.style.l03_016000_256x107
+    - image.style.l03_024000_384x161
+    - image.style.l03_032000_512x215
+    - image.style.l03_040000_640x268
+    - image.style.l03_048000_768x322
+    - image.style.l03_056000_896x375
+    - image.style.l03_064000_1024x429
+    - image.style.l03_072000_1152x483
+    - image.style.l03_088000_1408x590
+    - image.style.l03_104000_1664x697
+    - image.style.l03_120000_1920x804
+    - image.style.l03_136000_2176x912
+    - image.style.l03_160000_2560x1073
+    - image.style.l03_184000_2944x1233
+    - image.style.l03_208000_3328x1394
+    - image.style.l03_240000_3840x1609
+id: landscape_anamorphic
+label: 'Landscape Anamorphic'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - l03_008000_128x54
+        - l03_016000_256x107
+        - l03_024000_384x161
+        - l03_032000_512x215
+        - l03_040000_640x268
+        - l03_048000_768x322
+        - l03_056000_896x375
+        - l03_064000_1024x429
+        - l03_072000_1152x483
+        - l03_088000_1408x590
+        - l03_104000_1664x697
+        - l03_120000_1920x804
+        - l03_136000_2176x912
+        - l03_160000_2560x1073
+        - l03_184000_2944x1233
+        - l03_208000_3328x1394
+        - l03_240000_3840x1609
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: l03_064000_1024x429

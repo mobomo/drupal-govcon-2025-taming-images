@@ -1,0 +1,26 @@
+uuid: b7c33833-8169-49ac-b6e1-b004d4bfca07
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.l01_landscape_32_9
+  module:
+    - crop
+name: hero_1920x540
+label: 'Hero (1920x540)'
+effects:
+  5f887250-ec5f-47f3-837d-a54c90e7bbc1:
+    uuid: 5f887250-ec5f-47f3-837d-a54c90e7bbc1
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: l01_landscape_32_9
+      automatic_crop_provider: null
+  a7d8033f-356e-4b76-b543-561b94c5a0fa:
+    uuid: a7d8033f-356e-4b76-b543-561b94c5a0fa
+    id: image_scale
+    weight: 2
+    data:
+      width: 1920
+      height: null
+      upscale: true

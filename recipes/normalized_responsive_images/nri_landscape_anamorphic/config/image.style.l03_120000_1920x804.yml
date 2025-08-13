@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l03_120000_1920x804
+label: 'NIS Landscape Anamorphic - size 120 (1920x804)'
+effects:
+  f91e6b19-c8f5-4716-a0e1-bc3c0d676187:
+    uuid: f91e6b19-c8f5-4716-a0e1-bc3c0d676187
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 804
+      crop_type: focal_point
+  edf63fd1-5458-47ff-889d-ca3d9cc4cf6a:
+    uuid: edf63fd1-5458-47ff-889d-ca3d9cc4cf6a
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

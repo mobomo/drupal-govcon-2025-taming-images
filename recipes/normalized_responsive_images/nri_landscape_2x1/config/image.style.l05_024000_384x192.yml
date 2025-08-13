@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l05_024000_384x192
+label: 'NIS Landscape 2:1 - size 24 (384x192)'
+effects:
+  9a819075-b04d-4864-ae53-dec1830c3853:
+    uuid: 9a819075-b04d-4864-ae53-dec1830c3853
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 384
+      height: 192
+      crop_type: focal_point
+  8c6500c0-ac48-4101-9069-efc159a119b0:
+    uuid: 8c6500c0-ac48-4101-9069-efc159a119b0
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

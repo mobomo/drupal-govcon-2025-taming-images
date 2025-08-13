@@ -1,0 +1,11 @@
+uuid: ffa67f84-6458-42ee-ab84-b8c9966a0249
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.landscape_3_2
+label: 'L 3:2'
+description: ''
+targetEntityType: media
+cache: true

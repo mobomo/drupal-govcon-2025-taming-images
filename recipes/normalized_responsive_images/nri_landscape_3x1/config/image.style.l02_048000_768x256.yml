@@ -1,0 +1,24 @@
+uuid: 9ab58e28-ed24-4051-b984-91f73750db41
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l02_048000_768x256
+label: 'NIS Landscape 3:1 - size 48 (768x256)'
+effects:
+  2e384075-0ea1-43ba-9c33-42d71b41cb0f:
+    uuid: 2e384075-0ea1-43ba-9c33-42d71b41cb0f
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 768
+      height: 256
+      crop_type: focal_point
+  af5260a5-103a-45bd-af7a-5c0e4fa3ecd5:
+    uuid: af5260a5-103a-45bd-af7a-5c0e4fa3ecd5
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

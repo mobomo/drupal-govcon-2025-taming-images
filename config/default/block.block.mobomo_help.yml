@@ -1,0 +1,22 @@
+uuid: b56249e0-da58-4538-a75f-dcfc93bd300e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mobomo
+_core:
+  default_config_hash: IwxLMA62VvwW8hWTPSU-PxE8lxpaFozWS67rh5K5-Vc
+id: mobomo_help
+theme: mobomo
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

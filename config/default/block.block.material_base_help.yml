@@ -1,0 +1,22 @@
+uuid: 220797b4-2a84-4b17-8585-0be90585a725
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - material_base
+_core:
+  default_config_hash: TGMtjlpLnf96Nmi09xt1ozqkyt8maMr2eBxjcKZhdFc
+id: material_base_help
+theme: material_base
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

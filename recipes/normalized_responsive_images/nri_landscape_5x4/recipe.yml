@@ -1,0 +1,12 @@
+name: 'Normalized Responsive Images - 5:4 (1.25:1)'
+description: 'A recipe for displaying 5:4 (1.25:1) responsive images using custom image view modes.'
+type: 'Media type'
+recipes:
+  - nri_image_media_type
+  - core/recipes/standard_responsive_images
+install:
+  - crop
+  - focal_point
+  - image_style_quality
+config:
+  strict: false

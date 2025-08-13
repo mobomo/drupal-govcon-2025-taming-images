@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l04_040000_640x270
+label: 'NIS Landscape 21:9 - size 40 (640x270)'
+effects:
+  f7d22cd0-f03a-4917-aea5-5546c9345751:
+    uuid: f7d22cd0-f03a-4917-aea5-5546c9345751
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 640
+      height: 270
+      crop_type: focal_point
+  03fd4b60-112d-4120-a1b5-c021947b04e6:
+    uuid: 03fd4b60-112d-4120-a1b5-c021947b04e6
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

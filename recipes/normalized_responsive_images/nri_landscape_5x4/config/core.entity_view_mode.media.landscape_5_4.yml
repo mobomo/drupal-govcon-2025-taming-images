@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.landscape_5_4
+label: 'L 5:4'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,13 @@
+uuid: 7fe29fb9-d5e4-4915-a4c8-f7455a1007c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: W_SFWL2ID-tNxneHBC79qHKW6TdYDYEaHvMMhKz5UBA
+id: media.square_1_1
+label: 'Sq 1:1'
+description: ''
+targetEntityType: media
+cache: true

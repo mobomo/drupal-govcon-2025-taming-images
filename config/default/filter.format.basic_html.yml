@@ -1,0 +1,79 @@
+uuid: 4f206d4a-b1a4-4e45-8e05-647ca5832be1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.art_mask_banner
+    - core.entity_view_mode.media.art_mask_square
+    - core.entity_view_mode.media.landscape_16_9
+    - core.entity_view_mode.media.square_1_1
+  module:
+    - editor
+    - media
+_core:
+  default_config_hash: mclCbTlJwWJORez4Y1eX2MqA0aGjSMAoJb3TaBABcK8
+name: 'Basic HTML'
+format: basic_html
+weight: 0
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 7
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <a hreflang href> <blockquote cite> <ul type> <ol type reversed start> <strong> <em> <code> <li> <drupal-media data-entity-type data-entity-uuid alt data-view-mode data-caption data-align>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: 15
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes:
+        default: default
+        art_mask_banner: art_mask_banner
+        art_mask_square: art_mask_square
+        landscape_16_9: landscape_16_9
+        square_1_1: square_1_1
+      allowed_media_types:
+        image: image
+        vector_image: vector_image

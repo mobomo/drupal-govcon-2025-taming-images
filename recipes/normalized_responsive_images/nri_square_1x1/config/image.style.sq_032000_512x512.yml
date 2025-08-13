@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: sq_032000_512x512
+label: 'NIS Square 1:1 - size 32 (512x512)'
+effects:
+  2d521fe4-370e-417b-9a3c-405d71a05333:
+    uuid: 2d521fe4-370e-417b-9a3c-405d71a05333
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 512
+      height: 512
+      crop_type: focal_point
+  52179cc2-9fd4-4bb8-b7db-f5735cdac6ed:
+    uuid: 52179cc2-9fd4-4bb8-b7db-f5735cdac6ed
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

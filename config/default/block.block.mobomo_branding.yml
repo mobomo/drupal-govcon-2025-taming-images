@@ -1,0 +1,25 @@
+uuid: 5c3e21e6-e013-4fbc-a8fd-37efb8c77430
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mobomo
+_core:
+  default_config_hash: ek6FafLOEPxSSHSX3ZJaT_C68jIJegMJZM-NN2ynh9U
+id: mobomo_branding
+theme: mobomo
+region: navbar
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

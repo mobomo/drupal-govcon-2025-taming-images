@@ -1,0 +1,26 @@
+uuid: d176750e-f97f-4bc7-8a23-429e41ca19f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.l01_landscape_32_9
+  module:
+    - crop
+name: al01_240000_3840x1080
+label: 'ART Landscape 32:9 - size 240 (3840x1080)'
+effects:
+  11a3797b-fec7-4da2-9f8d-add5e27d1e46:
+    uuid: 11a3797b-fec7-4da2-9f8d-add5e27d1e46
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: l01_landscape_32_9
+      automatic_crop_provider: null
+  2cdfb6d2-5c86-419f-860c-75921e05e18d:
+    uuid: 2cdfb6d2-5c86-419f-860c-75921e05e18d
+    id: image_scale
+    weight: 2
+    data:
+      width: 3840
+      height: null
+      upscale: true

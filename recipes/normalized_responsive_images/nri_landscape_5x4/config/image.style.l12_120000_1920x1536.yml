@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: l12_120000_1920x1536
+label: 'NIS Landscape 5:4 - size 120 (1920x1536)'
+effects:
+  becd288f-3914-46a9-a4cf-375e98a12c41:
+    uuid: becd288f-3914-46a9-a4cf-375e98a12c41
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1920
+      height: 1536
+      crop_type: focal_point
+  12f741c1-0cb0-49cf-9184-56fc3aa49b10:
+    uuid: 12f741c1-0cb0-49cf-9184-56fc3aa49b10
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 50

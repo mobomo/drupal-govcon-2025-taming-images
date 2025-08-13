@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p02_008000_128x171
+label: 'NIS Portrait 3:4 - size 8 (128x171)'
+effects:
+  2c61bee7-82be-411a-a5f0-59d3fcc4a32c:
+    uuid: 2c61bee7-82be-411a-a5f0-59d3fcc4a32c
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 128
+      height: 171
+      crop_type: focal_point
+  744ae886-9299-4b36-af58-ca1673e06774:
+    uuid: 744ae886-9299-4b36-af58-ca1673e06774
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85

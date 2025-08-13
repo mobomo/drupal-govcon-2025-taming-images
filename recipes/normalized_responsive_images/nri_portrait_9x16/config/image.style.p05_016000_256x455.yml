@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: p05_016000_256x455
+label: 'NIS Portrait 9:16 - size 16 (256x455)'
+effects:
+  5161d4dc-b0ed-4b69-8667-5e2aac1d3f42:
+    uuid: 5161d4dc-b0ed-4b69-8667-5e2aac1d3f42
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 256
+      height: 455
+      crop_type: focal_point
+  017c8dc7-c8fd-419f-8c36-624cee443ec5:
+    uuid: 017c8dc7-c8fd-419f-8c36-624cee443ec5
+    id: image_style_quality
+    weight: 1
+    data:
+      quality: 85
