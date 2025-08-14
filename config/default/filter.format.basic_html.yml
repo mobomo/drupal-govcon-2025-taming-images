@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.media.art_mask_banner
     - core.entity_view_mode.media.art_mask_square
     - core.entity_view_mode.media.landscape_16_9
+    - core.entity_view_mode.media.scaled_max
     - core.entity_view_mode.media.square_1_1
   module:
     - editor
@@ -70,6 +71,7 @@ filters:
       default_view_mode: default
       allowed_view_modes:
         default: default
+        scaled_max: scaled_max
         art_mask_banner: art_mask_banner
         art_mask_square: art_mask_square
         landscape_16_9: landscape_16_9

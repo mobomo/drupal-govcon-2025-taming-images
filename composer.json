@@ -36,6 +36,7 @@
         "drupal/media_bulk_upload": "^3.0.4",
         "drupal/media_duplicates": "^2.0.3",
         "drupal/media_entity_browser": "^3.0",
+        "drupal/normalized_image_styles": "^2.1",
         "drupal/pathauto": "^1.13",
         "drupal/redirect": "^1.11",
         "drupal/schemadotorg": "^1.0@alpha",
