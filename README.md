@@ -9,6 +9,7 @@
 - `ddev start`
 - `ddev co i`
 - `ddev robo project:init`
+- `ddev robo build:theme`
 - `ddev dr uli` or use **admin**:*admin*
 
 
